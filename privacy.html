@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Seekr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .glass-header {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        }
+        .hero-bg-blue { background: radial-gradient(circle, rgba(147,197,253,0.3) 0%, rgba(255,255,255,0) 70%); }
+        .hero-bg-purple { background: radial-gradient(circle, rgba(192,132,252,0.2) 0%, rgba(255,255,255,0) 70%); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased">
+
+    <header class="glass-header fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-bold text-2xl tracking-tight">Seekr.</a>
+            <button class="bg-black text-white px-6 py-2.5 rounded-full font-medium shadow-lg">Download</button>
+        </div>
+    </header>
+
+    <main class="relative pt-40 pb-20 px-6 max-w-4xl mx-auto">
+        <div class="absolute -top-20 -left-20 w-[600px] h-[600px] hero-bg-blue pointer-events-none z-0"></div>
+        <div class="absolute top-20 -right-20 w-[600px] h-[600px] hero-bg-purple pointer-events-none z-0"></div>
+
+        <div class="relative z-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tighter mb-8">Privacy Policy</h1>
+            
+            <div class="glass-card rounded-3xl p-8 md:p-12 space-y-12">
+                <p class="text-lg text-slate-500 leading-relaxed">
+                    This Privacy Policy describes how Seekr ("we", "us", or "our") collects, uses, and protects your Personally Identifiable Information (PII) when you use our app. Please read it carefully to understand our practices.
+                </p>
+
+                <div class="space-y-10">
+                    <section>
+                        <h2 class="text-xl font-bold mb-4">What Personal Information Do We Collect?</h2>
+                        <p class="text-slate-600 leading-relaxed">When you register or use Seekr, we may ask you to provide your first name, last name, and email address. This information is used to personalise your experience and enable core app features such as trip coordination and social connection with other travellers.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-bold mb-4">When Do We Collect Information?</h2>
+                        <p class="text-slate-600 leading-relaxed">We collect information from you when you register an account, create or join a trip, or otherwise enter information into the app.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-bold mb-4">How Do We Use Your Information?</h2>
+                        <ul class="list-disc ml-5 space-y-2 text-slate-600">
+                            <li>Personalise your experience and provide relevant trip suggestions.</li>
+                            <li>Send periodic emails regarding your use of our Services or announcements about new features.</li>
+                            <li>Enable social features such as sharing trips and coordinating with other users.</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-bold mb-4">How Do We Protect Your Information?</h2>
+                        <p class="text-slate-600 leading-relaxed">Your personal information is stored behind secured networks and is only accessible by a limited number of persons who have special access rights and are required to keep the information confidential. All sensitive information is encrypted via Secure Socket Layer (SSL) technology.</p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-xl font-bold mb-4">Data Breach & Redress</h2>
+                        <p class="text-slate-600 leading-relaxed">In the event of a data breach, we will notify affected users via email within 7 business days and via in-app notification within 7 business days. We adhere to the Individual Redress Principle, ensuring users have enforceable rights against data processors.</p>
+                    </section>
+                </div>
+
+                <div class="pt-10 border-t border-slate-200">
+                    <h3 class="font-bold text-sm uppercase tracking-widest text-slate-400 mb-4">Change Log</h3>
+                    <div class="flex gap-8 text-sm text-slate-500">
+                        <span class="font-bold">2026-03-23</span>
+                        <span>First version published.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-loader"></div>
+
+    <script>
+        fetch('footer-component.html')
+            .then(response => response.text())
+            .then(data => { document.getElementById('footer-loader').innerHTML = data; });
+    </script>
+</body>
+</html>
