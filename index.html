@@ -50,19 +50,30 @@
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 overflow-x-hidden">
 
-    <header class="glass-header fixed w-full top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="font-bold text-2xl tracking-tight">Seekr.</div>
-            <nav class="hidden md:flex space-x-10 font-medium text-slate-600">
-                <a href="#features" class="hover:text-black transition">Features</a>
-                <a href="#ecosystem" class="hover:text-black transition">Ecosystem</a>
-                <a href="#compare" class="hover:text-black transition">Compare</a>
-            </nav>
-            <button class="bg-black text-white px-6 py-2.5 rounded-full font-medium hover:bg-slate-800 transition shadow-lg">
-                Download
+<header class="glass-header fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div class="font-bold text-2xl tracking-tight">Seekr.</div>
+        <nav class="hidden md:flex space-x-10 font-medium text-slate-600">
+            <a href="#features" class="hover:text-black transition">Features</a>
+            <a href="#ecosystem" class="hover:text-black transition">Ecosystem</a>
+            <a href="#compare" class="hover:text-black transition">Compare</a>
+        </nav>
+        
+        <div class="flex items-center gap-4">
+            <form class="hidden md:flex items-center bg-white/60 backdrop-blur-md border border-slate-200 rounded-full p-1 shadow-sm focus-within:ring-2 focus-within:ring-blue-500 transition-all">
+                <input type="email" placeholder="Enter your email..." required
+                       class="bg-transparent px-4 py-2 text-sm outline-none w-48 text-slate-700 placeholder-slate-400 font-medium">
+                <button type="submit" class="bg-black text-white px-5 py-2 rounded-full font-medium text-sm hover:bg-slate-800 transition">
+                    Join Waitlist
+                </button>
+            </form>
+
+            <button class="md:hidden bg-black text-white px-5 py-2.5 rounded-full font-medium shadow-lg text-sm">
+                Waitlist
             </button>
         </div>
-    </header>
+        </div>
+</header>
 
     <section class="relative pt-40 pb-20 px-6 max-w-6xl mx-auto text-center min-h-[90vh] flex flex-col justify-center">
         <div class="absolute -top-20 -left-20 w-[700px] h-[700px] hero-bg-blue pointer-events-none z-0"></div>
