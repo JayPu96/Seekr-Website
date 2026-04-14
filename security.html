@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Privacy | Seekr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .glass-header { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); }
+        .hero-bg-blue { background: radial-gradient(circle, rgba(147,197,253,0.2) 0%, rgba(255,255,255,0) 70%); }
+        .animate-up { opacity: 0; transform: translateY(30px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100">
+
+<header class="glass-header fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="index.html" class="font-bold text-2xl tracking-tight">Seekr.</a>
+        <a href="index.html" class="text-sm font-semibold text-slate-600 hover:text-black transition">Back to Home</a>
+    </div>
+</header>
+
+<main class="pt-40 pb-20 px-6 max-w-4xl mx-auto">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] hero-bg-blue pointer-events-none -z-10"></div>
+
+    <section class="text-center mb-24">
+        <div class="inline-block py-1 px-4 rounded-full bg-emerald-50 text-emerald-600 font-bold text-xs uppercase tracking-widest mb-6 border border-emerald-100 animate-up">Privacy by Design</div>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 animate-up">Your plans are your business.</h1>
+        <p class="text-xl text-slate-500 font-medium leading-relaxed animate-up">At Seekr, we believe travel planning is deeply personal. Our architecture is built to ensure your data is processed locally whenever possible and stays private always.</p>
+    </section>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-24">
+        <div class="glass-card rounded-[2.5rem] p-10 animate-up">
+            <div class="text-4xl mb-6">📱</div>
+            <h3 class="text-2xl font-bold mb-4">80% On-Device</h3>
+            <p class="text-slate-600 leading-relaxed">Most of your messiest thoughts are handled right on your iPhone. Our local intent detection and geographic gatekeepers verify locations using Apple's on-device maps database—meaning 80% of your requests never even touch a server.</p>
+        </div>
+        <div class="glass-card rounded-[2.5rem] p-10 animate-up">
+            <div class="text-4xl mb-6">☁️</div>
+            <h3 class="text-2xl font-bold mb-4">20% Private Cloud</h3>
+            <p class="text-slate-600 leading-relaxed">For complex itineraries or ambiguous requests, Seekr uses a private bridge to Gemini Flash. This is only triggered with your explicit consent and uses a secure, minimal JSON pipeline that doesn't train models on your data.</p>
+        </div>
+    </div>
+
+    <section class="space-y-16 animate-up">
+        <div class="border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold mb-6">Smart Bridge Architecture</h2>
+            <p class="text-slate-600 text-lg leading-relaxed mb-8">The "Smart Bridge" uses a three-tier intelligent routing system to ensure maximum privacy and efficiency:</p>
+            <ul class="space-y-6">
+                <li class="flex gap-5">
+                    <div class="flex-none w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">1</div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Local Intent Detection</h4>
+                        <p class="text-slate-500">Extracts duration, activities, and participants locally before deciding if cloud assistance is required.</p>
+                    </div>
+                </li>
+                <li class="flex gap-5">
+                    <div class="flex-none w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">2</div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Geographic Gatekeeper</h4>
+                        <p class="text-slate-500">Uses the on-device CLGeocoder to verify locations instantly. If verified locally, the process ends there—instant and free of external data transfer.</p>
+                    </div>
+                </li>
+                <li class="flex gap-5">
+                    <div class="flex-none w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold">3</div>
+                    <div>
+                        <h4 class="font-bold text-slate-900">Consented Resolution</h4>
+                        <p class="text-slate-500">Only when location is unverified or a generative itinerary is requested does Seekr proceed to our private Google API for ambiguity resolution.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold mb-6">Our Data Promise</h2>
+            <div class="grid sm:grid-cols-2 gap-10">
+                <div>
+                    <h4 class="font-bold mb-2">Zero Data Selling</h4>
+                    <p class="text-slate-500 text-sm">We don't sell your plans, your locations, or your group habits to advertisers. Period.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2">iCloud Encryption</h4>
+                    <p class="text-slate-500 text-sm">Your trip data is synced via Apple's secure iCloud infrastructure, keeping it encrypted and available across all your devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-white border-t border-slate-200 py-20 px-6 text-center">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Securely Crafted in San Francisco</p>
+</footer>
+
+<script>
+    gsap.to(".animate-up", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.15,
+        ease: "power3.out"
+    });
+</script>
+
+</body>
+</html>
