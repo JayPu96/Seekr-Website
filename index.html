@@ -23,11 +23,26 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
         }
-        .glass-card:hover {
-            transform: translateY(-8px);
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        /* 1. The Base Style (How it looks) */
+.glass-card-interactive {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* This makes the movement smooth */
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1); 
+}
+
+/* 2. The Hover Logic (What it does on Desktop) */
+@media (min-width: 1024px) {
+    .glass-card-interactive:hover {
+        transform: translateY(-15px) scale(1.05);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        z-index: 50; /* Brings the hovered card to the very front */
         }
+    }
+ /* 3. Global Glass Table (Works on all screens) */
         .glass-table {
             background: rgba(255, 255, 255, 0.4);
             backdrop-filter: blur(20px);
@@ -46,6 +61,19 @@
         .hero-bg-purple {
             background: radial-gradient(circle, rgba(192,132,252,0.25) 0%, rgba(255,255,255,0) 70%);
         }
+        /* Subtle drift for Mobile (Non-hover movement) */
+@keyframes mobile-drift {
+    0% { transform: translate(0, 0); }
+    33% { transform: translate(5px, -5px); }
+    66% { transform: translate(-3px, 5px); }
+    100% { transform: translate(0, 0); }
+}
+
+@media (max-width: 1023px) {
+    .animate-mobile-drift {
+        animation: mobile-drift 8s ease-in-out infinite;
+    }
+}
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 overflow-x-hidden">
