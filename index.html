@@ -99,8 +99,8 @@
     </button>
     
     <div class="bg-white/60 backdrop-blur-md border border-slate-200 px-8 py-3 rounded-full font-medium text-slate-600 w-full sm:w-auto flex flex-col items-center justify-center shadow-lg cursor-default">
-        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-0.5">Mac App Launching In</span>
-        <div id="mac-countdown" class="text-xl font-bold text-slate-900 font-mono tracking-tight">
+        <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-0.5">Seekr Launching In</span>
+        <div id="app-countdown" class="text-xl font-bold text-slate-900 font-mono tracking-tight">
             --d --h --m
         </div>
     </div>
@@ -296,7 +296,7 @@
         initScrollAnimations('.animate-up');
     </script>
     <script>
-    // --- Mac App Countdown Logic ---
+    // --- App Countdown Logic ---
     // Set your target launch date here! (Format: Month Day, Year Time)
     const launchDate = new Date("May 12, 2026 09:00:00").getTime();
 
@@ -304,7 +304,7 @@
         const now = new Date().getTime();
         const distance = launchDate - now;
 
-        const countdownElement = document.getElementById("mac-countdown");
+        const countdownElement = document.getElementById("app-countdown");
 
         // If the countdown is finished, display a message
         if (distance < 0) {
