@@ -143,14 +143,21 @@
         </div>
     </section>
 
-    <section id="features" class="py-32 px-6 bg-slate-50 relative">
-        <div class="max-w-6xl mx-auto">
+    <section id="features" class="py-32 px-6 bg-slate-50 relative overflow-hidden">
+        
+        <div class="absolute -top-40 -left-20 w-[800px] h-[800px] hero-bg-purple pointer-events-none z-0"></div>
+        <div class="absolute top-40 -right-20 w-[800px] h-[800px] hero-bg-blue pointer-events-none z-0"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
             
             <div class="glass-table rounded-[3rem] p-8 md:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.04)] border border-white/60 mx-auto w-full animate-up relative overflow-hidden">
                 
                 <div class="mb-14 text-center md:text-left px-2">
                     <div class="text-slate-500 font-bold mb-3 uppercase tracking-[0.2em] text-xs">Everything New</div>
-                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">Organize everything.<br>One release.</h2>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+                        Organize everything.<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">One release.</span>
+                    </h2>
                 </div>
 
                 <div class="grid grid-cols-2 md:grid-cols-6 gap-5 auto-rows-[160px] md:auto-rows-[150px]">
