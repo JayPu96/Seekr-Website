@@ -10,14 +10,10 @@
     <style>
         .glass-header { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
         .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
-        .glass-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.8); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .glass-table { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.4); }
         .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 70%); }
         .pro-text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .animate-up { opacity: 0; transform: translateY(30px); }
-        
-        /* Pricing Table Styles */
-        .check-icon { color: #4f46e5; font-size: 1.25rem; font-weight: bold; }
-        .empty-icon { color: #cbd5e1; font-size: 1.25rem; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100">
@@ -64,88 +60,90 @@
         </div>
     </section>
 
-    <section class="max-w-6xl mx-auto px-6 mb-40">
-        <div class="grid grid-cols-2 md:grid-cols-6 gap-5 auto-rows-[160px] md:auto-rows-[180px]">
-            <div class="col-span-2 md:col-span-3 row-span-2 glass-card rounded-[2.5rem] p-10 flex flex-col justify-end relative overflow-hidden group animate-up">
-                <div class="absolute top-10 left-10 text-7xl group-hover:scale-110 transition-transform duration-500">♾️</div>
-                <h3 class="text-3xl font-bold mb-3">Unlimited Trips</h3>
-                <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Forget the 8-trip limit. Archive and manage every adventure you've ever planned without restrictions.</p>
+    <section id="compare" class="py-32 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Seekr vs. The Others</h2>
+                <p class="text-slate-500 text-lg">See why Seekr is the new standard for modern travel crews.</p>
             </div>
-            <div class="col-span-2 md:col-span-3 row-span-1 glass-card bg-indigo-50/30 border-indigo-100/50 rounded-[2.5rem] p-8 flex items-center gap-8 group animate-up">
-                <div class="text-5xl group-hover:rotate-12 transition-transform">🧠</div>
-                <div>
-                    <h3 class="text-xl font-bold">Generative Itineraries</h3>
-                    <p class="text-xs text-slate-500 mt-1">Full day-by-day drafts built by the Smart Bridge AI.</p>
-                </div>
-            </div>
-            <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
-                <div class="text-4xl mb-2 group-hover:-translate-y-2 transition-transform">⛺️</div>
-                <h4 class="font-bold text-xs">Group Vault</h4>
-            </div>
-            <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
-                <div class="text-4xl mb-2 group-hover:scale-110 transition-transform">🚀</div>
-                <h4 class="font-bold text-xs">Early Access</h4>
-            </div>
-            <div class="col-span-2 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
-                <div class="text-4xl mb-2 group-hover:rotate-12 transition-transform">🌤️</div>
-                <h4 class="font-bold text-xs">Seasonality</h4>
-            </div>
-            <div class="col-span-2 md:col-span-2 row-span-1 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2.5rem] p-8 flex items-center justify-between text-white group animate-up shadow-xl shadow-indigo-200">
-                <div>
-                    <h3 class="text-xl font-bold">Large Lobbies</h3>
-                    <p class="text-indigo-100 text-xs mt-1">Scale up to 59 members.</p>
-                </div>
-                <div class="text-4xl font-black opacity-90 group-hover:scale-125 transition-transform">59</div>
-            </div>
-        </div>
-    </section>
 
-    <section id="compare" class="py-32 px-6 bg-white border-y border-slate-100">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl font-bold mb-16 text-center tracking-tight">All you can do</h2>
+            <div class="glass-table rounded-[2.5rem] overflow-x-auto shadow-2xl animate-up border border-slate-200">
+                <table class="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                        <tr class="bg-slate-100/80 border-b border-slate-200">
+                            <th class="p-8 font-bold text-slate-900 w-1/4">The Planning Engine</th>
+                            <th class="p-8 font-bold text-indigo-600 bg-indigo-50/50 border-x border-indigo-100/50 text-center">
+                                <div class="flex flex-col items-center gap-2">
+                                    <span class="text-xs uppercase tracking-widest opacity-60">The Pro Choice</span>
+                                    Seekr Pro
+                                </div>
+                            </th>
+                            <th class="p-8 font-semibold text-slate-500 text-center">Tripsy</th>
+                            <th class="p-8 font-semibold text-slate-500 text-center">TripIt</th>
+                            <th class="p-8 font-semibold text-slate-500 text-center">Flighty</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8">
+                                <div class="font-bold text-slate-900 mb-1">Full Lifecycle Planning</div>
+                                <div class="text-slate-500 text-xs">From "Ideas" to "Booked" status</div>
+                            </td>
+                            <td class="p-8 bg-indigo-50/30 border-x border-indigo-100/30 text-center text-indigo-600 font-bold text-xl">●</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                        </tr>
+
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8">
+                                <div class="font-bold text-slate-900 mb-1">The Group Vault</div>
+                                <div class="text-slate-500 text-xs">Persistent shared gear & asset tracking</div>
+                            </td>
+                            <td class="p-8 bg-indigo-50/30 border-x border-indigo-100/30 text-center text-indigo-600 font-bold text-xl">●</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                        </tr>
+
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8">
+                                <div class="font-bold text-slate-900 mb-1">Availability Sync</div>
+                                <div class="text-slate-500 text-xs">Automatic "Best Dates" matching</div>
+                            </td>
+                            <td class="p-8 bg-indigo-50/30 border-x border-indigo-100/30 text-center text-indigo-600 font-bold text-xl">●</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                        </tr>
+
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8">
+                                <div class="font-bold text-slate-900 mb-1">Smart Bridge AI</div>
+                                <div class="text-slate-500 text-xs">Generative itineraries & parsing</div>
+                            </td>
+                            <td class="p-8 bg-indigo-50/30 border-x border-indigo-100/30 text-center text-indigo-600 font-bold text-xl">●</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-400 text-center text-lg">⚠️</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                        </tr>
+
+                        <tr class="group hover:bg-white transition-colors">
+                            <td class="p-8">
+                                <div class="font-bold text-slate-900 mb-1">Social Lobby</div>
+                                <div class="text-slate-500 text-xs">Persistent Member System</div>
+                            </td>
+                            <td class="p-8 bg-indigo-50/30 border-x border-indigo-100/30 text-center text-indigo-600 font-bold text-xl rounded-b-[2.5rem]">●</td>
+                            <td class="p-8 text-slate-400 text-center text-lg">⚠️</td>
+                            <td class="p-8 text-slate-300 text-center text-xl">○</td>
+                            <td class="p-8 text-slate-400 text-center text-lg">⚠️</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             
-            <div class="space-y-1">
-                <div class="grid grid-cols-6 py-4 border-b border-slate-100 text-[10px] font-black uppercase tracking-widest text-slate-400">
-                    <div class="col-span-4">Feature</div>
-                    <div class="text-center">Free</div>
-                    <div class="text-center text-indigo-600">Pro</div>
-                </div>
-
-                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Unlimited Trips</div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
-                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Group Vault <span class="block text-[10px] text-slate-400 font-medium">Shared asset tracking</span></div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
-                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Generative Itineraries <span class="block text-[10px] text-slate-400 font-medium">Cloud AI day planning</span></div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
-                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Weather-Aware Ranking</div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
-                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Large Lobbies <span class="block text-[10px] text-slate-400 font-medium">Up to 59 members</span></div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
-                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Early Access <span class="block text-[10px] text-slate-400 font-medium">Be the first to test features</span></div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
-                <div class="grid grid-cols-6 py-6 items-center">
-                    <div class="col-span-4 font-bold text-slate-700">Fair Share Expenses <span class="block text-[10px] text-slate-400 font-medium">Weighted & percentage splits</span></div>
-                    <div class="text-center text-slate-300">○</div>
-                    <div class="text-center text-indigo-600">●</div>
-                </div>
+            <div class="mt-12 text-center text-slate-400 text-sm italic">
+                * Comparison based on public feature sets as of April 2026.
             </div>
         </div>
     </section>
