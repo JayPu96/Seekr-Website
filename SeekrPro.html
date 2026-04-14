@@ -9,9 +9,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
         .glass-header { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .glass-card { background: rgba(255, 255, 255, 0.4); 
+        backdrop-filter: blur(20px); 
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.5); 
+        transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    }
         .glass-table { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.4); }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 70%); }
+        .hero-gradient {background: 
+            radial-gradient(circle at 20% 10%, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 50%),
+            radial-gradient(circle at 80% 30%, rgba(168, 85, 247, 0.12) 0%, rgba(255, 255, 255, 0) 50%),
+            radial-gradient(circle at 50% 60%, rgba(99, 102, 241, 0.1) 0%, rgba(255, 255, 255, 0) 60%); 
+    }
         .pro-text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .animate-up { opacity: 0; transform: translateY(30px); }
         
@@ -36,7 +45,7 @@
 
     
 <main class="pt-40">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] hero-gradient pointer-events-none -z-10"></div>
+    <div class="absolute top-0 left-0 right-0 w-full h-[2200px] hero-gradient pointer-events-none -z-10"></div>
 
     <section class="max-w-5xl mx-auto px-6 mb-24 text-center">
         <div class="inline-block py-1 px-4 rounded-full bg-indigo-50 text-indigo-600 font-bold text-xs uppercase tracking-widest mb-8 border border-indigo-100 animate-up">Pricing Plans</div>
