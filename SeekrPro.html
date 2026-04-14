@@ -6,9 +6,11 @@
     <title>Seekr Pro | The Ultimate Planning Lobby</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
-        .glass-header { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); }
+        .glass-header { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .glass-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.8); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
         .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 70%); }
         .pro-text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .animate-up { opacity: 0; transform: translateY(30px); }
@@ -19,7 +21,9 @@
 <header class="glass-header fixed w-full top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         <a href="index.html" class="font-bold text-2xl tracking-tight">Seekr<span class="pro-text-gradient">.Pro</span></a>
-        <a href="index.html" class="text-sm font-semibold text-slate-600 hover:text-black transition">Back to Home</a>
+        <a href="#" class="bg-black text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-slate-800 transition shadow-lg transform active:scale-95">
+            Get the App
+        </a>
     </div>
 </header>
 
@@ -29,7 +33,7 @@
     <section class="max-w-4xl mx-auto text-center px-6 mb-32">
         <div class="inline-block py-1 px-4 rounded-full bg-indigo-50 text-indigo-600 font-bold text-xs uppercase tracking-widest mb-8 border border-indigo-100 animate-up">Unlock Scale & Intelligence</div>
         <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 animate-up">The ultimate upgrade for the ultimate crew.</h1>
-        <p class="text-xl text-slate-500 font-medium leading-relaxed mb-12 animate-up">Seekr Pro is designed for the power planners. Go beyond basic coordination with unlimited scale, persistent collaboration, and advanced travel intelligence.</p>
+        <p class="text-xl text-slate-500 font-medium leading-relaxed mb-12 animate-up">Seekr Pro is designed for power planners. Go beyond basic coordination with unlimited scale, persistent collaboration, and advanced travel intelligence.</p>
         
         <div class="animate-up">
             <div class="inline-flex flex-col items-center bg-white border border-slate-200 rounded-[3rem] p-2 shadow-2xl">
@@ -38,7 +42,7 @@
                         <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Seekr Pro Annual</p>
                         <p class="text-2xl font-black">$29.00<span class="text-sm font-medium text-slate-400">/year</span></p>
                     </div>
-                    <button class="bg-black text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 transition shadow-lg">Start Free Trial</button>
+                    <button class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg">Start Free Trial</button>
                 </div>
                 <p class="text-[10px] text-slate-400 pb-3 font-medium uppercase tracking-tighter">Save 36% compared to monthly billing</p>
             </div>
@@ -46,43 +50,56 @@
     </section>
 
     <section class="max-w-6xl mx-auto px-6 mb-40">
-        <div class="grid grid-cols-2 md:grid-cols-6 gap-4 auto-rows-[160px] md:auto-rows-[150px] animate-up">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-5 auto-rows-[160px] md:auto-rows-[180px]">
             
-            <div class="col-span-2 md:col-span-3 row-span-2 glass-card rounded-[2.5rem] p-10 flex flex-col justify-end relative overflow-hidden group">
-                <div class="absolute top-10 left-10 text-6xl group-hover:scale-110 transition-transform">♾️</div>
-                <h3 class="text-2xl font-bold mb-2">Unlimited Trips</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Free users are limited to 8 active plans. Pro users get unlimited active trips, past history, and archive access.</p>
-            </div>
-
-            <div class="col-span-2 md:col-span-3 row-span-1 glass-card rounded-[2.5rem] px-8 flex items-center gap-6">
-                <div class="text-4xl">🧠</div>
-                <div>
-                    <h3 class="font-bold">Generative Itineraries</h3>
-                    <p class="text-xs text-slate-500">Full day-by-day drafts built by the Smart Bridge AI.</p>
+            <div class="col-span-2 md:col-span-3 row-span-2 glass-card rounded-[2.5rem] p-10 flex flex-col justify-end relative overflow-hidden group animate-up">
+                <div class="absolute top-10 left-10 text-7xl group-hover:scale-110 transition-transform duration-500">♾️</div>
+                <div class="relative z-10">
+                    <h3 class="text-3xl font-bold mb-3">Unlimited Trips</h3>
+                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Forget the 8-trip limit. Archive, revisit, and manage every adventure you've ever planned without restrictions.</p>
                 </div>
             </div>
 
-            <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4">
-                <div class="text-3xl mb-2">⛺️</div>
+            <div class="col-span-2 md:col-span-3 row-span-1 glass-card bg-indigo-50/30 border-indigo-100/50 rounded-[2.5rem] p-8 flex items-center gap-8 group animate-up">
+                <div class="text-5xl group-hover:rotate-12 transition-transform">🧠</div>
+                <div>
+                    <h3 class="text-xl font-bold">Generative Itineraries</h3>
+                    <p class="text-xs text-slate-500 mt-1">Full day-by-day drafts built by the Smart Bridge AI based on your group's unique vibe.</p>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
+                <div class="text-4xl mb-2 group-hover:-translate-y-2 transition-transform">⛺️</div>
                 <h4 class="font-bold text-xs">Group Vault</h4>
+                <p class="text-[9px] text-slate-400 mt-1 uppercase tracking-tighter font-bold">Persistent Gear</p>
             </div>
 
-            <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4">
-                <div class="text-3xl mb-2">💸</div>
-                <h4 class="font-bold text-xs">Global Splits</h4>
+            <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
+                <div class="text-4xl mb-2 group-hover:scale-110 transition-transform">🚀</div>
+                <h4 class="font-bold text-xs">Early Access</h4>
+                <p class="text-[9px] text-slate-400 mt-1 uppercase tracking-tighter font-bold">Beta Features</p>
             </div>
 
-            <div class="col-span-2 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4">
-                <div class="text-3xl mb-2">🌤️</div>
+            <div class="col-span-2 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
+                <div class="text-4xl mb-2 group-hover:rotate-12 transition-transform">🌤️</div>
                 <h4 class="font-bold text-xs">Seasonality</h4>
+                <p class="text-[9px] text-slate-400 mt-1 uppercase tracking-tighter font-bold">Weather Intel</p>
             </div>
 
-            <div class="col-span-2 md:col-span-2 row-span-1 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2.5rem] p-8 flex items-center justify-between text-white">
+            <div class="col-span-2 md:col-span-2 row-span-1 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2.5rem] p-8 flex items-center justify-between text-white group animate-up shadow-xl shadow-indigo-200">
                 <div>
                     <h3 class="text-xl font-bold">Large Lobbies</h3>
-                    <p class="text-indigo-100 text-xs">Up to 59 members per group.</p>
+                    <p class="text-indigo-100 text-xs mt-1">Scale up to 59 members.</p>
                 </div>
-                <div class="text-3xl font-black">59</div>
+                <div class="text-4xl font-black opacity-90 group-hover:scale-125 transition-transform">59</div>
+            </div>
+
+            <div class="col-span-2 md:col-span-3 row-span-1 glass-card bg-emerald-50/30 border-emerald-100/50 rounded-[2.5rem] p-8 flex items-center gap-8 group animate-up">
+                <div class="text-5xl group-hover:scale-110 transition-transform">💸</div>
+                <div>
+                    <h3 class="text-xl font-bold">Weighted Splits</h3>
+                    <p class="text-xs text-slate-500 mt-1">Granular expense tracking. Split by percentage, share, or fixed amount across the whole crew.</p>
+                </div>
             </div>
 
         </div>
@@ -101,13 +118,13 @@
                         </tr>
                     </thead>
                     <tbody class="text-sm font-medium">
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Active Trips</td><td class="py-6 px-8">Up to 8</td><td class="py-6 px-8 text-indigo-600">Unlimited</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Group Members</td><td class="py-6 px-8">Up to 12</td><td class="py-6 px-8 text-indigo-600">Up to 59</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Group Vault</td><td class="py-6 px-8">View Only</td><td class="py-6 px-8 text-indigo-600">Full Access</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Smart Bridge AI</td><td class="py-6 px-8">Local Parsing</td><td class="py-6 px-8 text-indigo-600">Generative Itineraries</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Best Dates</td><td class="py-6 px-8">Availability</td><td class="py-6 px-8 text-indigo-600">Weather-Aware Ranking</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Templates</td><td class="py-6 px-8">Basic</td><td class="py-6 px-8 text-indigo-600">Full Curated Library</td></tr>
-                        <tr><td class="py-6 text-slate-500">Custom Splits</td><td class="py-6 px-8">Equal Only</td><td class="py-6 px-8 text-indigo-600">Weighted & Granular</td></tr>
+                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Active Trips</td><td class="py-6 px-8">Up to 8</td><td class="py-6 px-8 text-indigo-600 font-bold">Unlimited</td></tr>
+                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Group Members</td><td class="py-6 px-8">Up to 12</td><td class="py-6 px-8 text-indigo-600 font-bold">Up to 59</td></tr>
+                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Group Vault</td><td class="py-6 px-8">View Only</td><td class="py-6 px-8 text-indigo-600 font-bold">Full Contributor Access</td></tr>
+                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Smart Bridge AI</td><td class="py-6 px-8">Local Parsing</td><td class="py-6 px-8 text-indigo-600 font-bold">Generative Itineraries</td></tr>
+                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Best Dates</td><td class="py-6 px-8">Availability Only</td><td class="py-6 px-8 text-indigo-600 font-bold">Weather-Aware Ranking</td></tr>
+                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Early Access</td><td class="py-6 px-8">No</td><td class="py-6 px-8 text-indigo-600 font-bold">Priority Beta Access</td></tr>
+                        <tr><td class="py-6 text-slate-500">Custom Splits</td><td class="py-6 px-8">Equal Only</td><td class="py-6 px-8 text-indigo-600 font-bold">Weighted & Granular</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -117,7 +134,7 @@
     <section class="py-40 px-6 text-center">
         <h2 class="text-5xl font-bold mb-8 animate-up">Experience the full power.</h2>
         <div class="animate-up">
-            <button class="bg-indigo-600 text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl hover:bg-indigo-700 transition transform hover:scale-105">Start Your 7-Day Free Trial</button>
+            <button class="bg-black text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl hover:bg-slate-800 transition transform hover:scale-105">Start Your 7-Day Free Trial</button>
             <p class="mt-6 text-slate-400 text-sm font-medium">Monthly billing available for $4.99/mo</p>
         </div>
     </section>
@@ -129,12 +146,20 @@
 </footer>
 
 <script>
-    gsap.to(".animate-up", {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.2,
-        ease: "power3.out"
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".animate-up").forEach(element => {
+        gsap.to(element, {
+            scrollTrigger: {
+                trigger: element,
+                start: "top 90%",
+                toggleActions: "play none none reverse"
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out"
+        });
     });
 </script>
 
