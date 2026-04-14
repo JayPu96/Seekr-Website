@@ -8,13 +8,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
-        /* Apple Glass Aesthetic */
-        .glass-header {
-            background: rgba(255, 255, 255, 0.4);
-            backdrop-filter: blur(24px);
-            -webkit-backdrop-filter: blur(24px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
+/* Apple Glass Aesthetic */
+.glass-header {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: env(safe-area-inset-top);
+    
+    /* Ensure it starts at the absolute 0 coordinate */
+    top: 0;
+    left: 0;
+}
         .glass-card {
             background: rgba(255, 255, 255, 0.6);
             backdrop-filter: blur(16px);
@@ -79,8 +84,10 @@
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 overflow-x-hidden">
 
 <header class="glass-header fixed w-full top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-6 h-20 md:h-24 flex items-center justify-between">
+        
         <div class="font-bold text-2xl tracking-tight">Seekr.</div>
+        
         <nav class="hidden md:flex space-x-10 font-medium text-slate-600">
             <a href="#features" class="hover:text-black transition">Features</a>
             <a href="#ecosystem" class="hover:text-black transition">Ecosystem</a>
