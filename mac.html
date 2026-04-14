@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seekr for Mac | Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        .glass-header { background: rgba(255, 255, 255, 0.4); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+        .glass-card { background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.5); }
+        .hero-bg-blue { background: radial-gradient(circle, rgba(147,197,253,0.2) 0%, rgba(255,255,255,0) 70%); }
+        .animate-up { opacity: 0; transform: translateY(30px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-100">
+
+<header class="glass-header fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="index.html" class="font-bold text-2xl tracking-tight">Seekr.</a>
+        <a href="index.html" class="text-sm font-semibold text-slate-600 hover:text-black transition">Back to Home</a>
+    </div>
+</header>
+
+<main class="pt-40 pb-20 px-6 max-w-4xl mx-auto">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] hero-bg-blue pointer-events-none -z-10"></div>
+
+    <section class="text-center mb-24">
+        <div class="inline-block py-1 px-4 rounded-full bg-blue-50 text-blue-600 font-bold text-xs uppercase tracking-widest mb-6 border border-blue-100 animate-up">Future Roadmap</div>
+        <h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter mb-8 animate-up">We’re thinking carefully about Seekr for [Platform].</h1>
+        <p class="text-xl text-slate-500 font-medium leading-relaxed animate-up">Seekr is built to help groups plan, organize itineraries, and manage every detail of a journey with clarity, beauty, and reliability.</p>
+    </section>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-24">
+        <div class="glass-card rounded-[2.5rem] p-10 animate-up">
+            <h3 class="text-2xl font-bold mb-4 text-slate-900">The Power of Choice</h3>
+            <p class="text-slate-600 leading-relaxed">We know how important it is to access your plans everywhere. Whether it's planning on a larger screen for precision or desktop multitasking, these are real needs we hear about often.</p>
+        </div>
+        <div class="glass-card rounded-[2.5rem] p-10 animate-up">
+            <h3 class="text-2xl font-bold mb-4 text-slate-900">Quality over Speed</h3>
+            <p class="text-slate-600 leading-relaxed">Seekr is built by a small, dedicated team. Every feature—from the <strong>Smart Bridge AI</strong> to the <strong>Group Vault</strong>—is carefully designed and maintained by us. Doing it right matters more to us than doing it fast.</p>
+        </div>
+    </div>
+
+    <section class="space-y-16 animate-up text-slate-600 text-lg leading-relaxed">
+        <div class="border-t border-slate-200 pt-16">
+            <h2 class="text-3xl font-bold mb-6 text-slate-900">What we’re focusing on right now</h2>
+            <p class="mb-6">Today, our priority is ensuring <strong>Seekr 1.0</strong> runs flawlessly on iOS. This is where our community plans, organizes, and relies on us most during their adventures. Maintaining a high level of polish across the Apple ecosystem requires our full focus.</p>
+            <p>Building a great [Platform] experience takes time and a long-term commitment to security and privacy. We could ship something quickly, but it wouldn’t meet the standard of quality that defines Seekr. We want to approach this expansion thoughtfully, when the timing and resources align perfectly.</p>
+        </div>
+
+        <div class="glass-card rounded-[3rem] p-12 text-center border-blue-100 bg-blue-50/30">
+            <h3 class="text-2xl font-bold mb-4 text-slate-900">Stay in the loop</h3>
+            <p class="mb-8 text-slate-500">Join the waitlist to be notified the second we’re ready for [Platform] testers.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email..." required class="flex-1 bg-white border border-slate-200 rounded-full px-6 py-4 outline-none focus:ring-2 focus:ring-blue-500 transition">
+                <button type="submit" class="bg-black text-white px-8 py-4 rounded-full font-bold hover:bg-slate-800 transition shadow-lg">Join Waitlist</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-white border-t border-slate-200 py-10 px-6 text-center">
+    <p class="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">© 2026 Seekr LLC</p>
+</footer>
+
+<script>
+    gsap.to(".animate-up", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.15,
+        ease: "power3.out"
+    });
+</script>
+
+</body>
+</html>
