@@ -23,7 +23,25 @@
     }
         .pro-text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .animate-up { opacity: 0; transform: translateY(30px); }
-        
+        .pill-ghost {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    border: 2px solid transparent;
+    /* This creates the gradient border */
+    background: linear-gradient(#f8fafc, #f8fafc) padding-box, 
+                linear-gradient(135deg, #3b82f6 0%, #a855f7 100%) border-box;
+}
+
+.pill-text-gradient {
+    background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 0.75rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
         .tripsy-pro-col { display: none; }
         .tripsy-pro-col.active { display: table-cell; }
         
@@ -70,7 +88,13 @@
     </section>
 
         <!-- Bento Feature Board -->
-
+<div class="flex flex-col items-center mb-16 animate-up">
+    <div class="w-px h-16 bg-gradient-to-b from-slate-200 to-indigo-500/50 mb-6"></div>
+    
+    <div class="pill-ghost">
+        <span class="pill-text-gradient">Explore Pro</span>
+    </div>
+</div>
 
 <style>
     /* Add a transition property to the cards so the skew reset is smooth */
