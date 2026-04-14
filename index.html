@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#93c5fd" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Seekr | Social Travel Planning Evolved</title>
@@ -12,10 +12,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
 /* Page Reset & Global Background */
-html, body {
+html {
+    /* This allows the background color to 'fill' the notch area */
+    background-color: #f8fafc; 
+    height: 100%;
+    /* This is a specific fix for Safari's white bar */
+    padding: 0;
+    margin: 0;
+}
+
+body {
     margin: 0;
     padding: 0;
-    background-color: #f8fafc; 
+    min-height: 100%;
 }
 
 /* Apple Glass Aesthetic - Optimized for Notch/Dynamic Island */
