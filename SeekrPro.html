@@ -14,6 +14,10 @@
         .hero-gradient { background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, rgba(255, 255, 255, 0) 70%); }
         .pro-text-gradient { background: linear-gradient(135deg, #3b82f6 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .animate-up { opacity: 0; transform: translateY(30px); }
+        
+        /* Pricing Table Styles */
+        .check-icon { color: #4f46e5; font-size: 1.25rem; font-weight: bold; }
+        .empty-icon { color: #cbd5e1; font-size: 1.25rem; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-indigo-100">
@@ -30,62 +34,62 @@
 <main class="pt-40">
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] hero-gradient pointer-events-none -z-10"></div>
 
-    <section class="max-w-4xl mx-auto text-center px-6 mb-32">
-        <div class="inline-block py-1 px-4 rounded-full bg-indigo-50 text-indigo-600 font-bold text-xs uppercase tracking-widest mb-8 border border-indigo-100 animate-up">Unlock Scale & Intelligence</div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-8 animate-up">The ultimate upgrade for the ultimate crew.</h1>
-        <p class="text-xl text-slate-500 font-medium leading-relaxed mb-12 animate-up">Seekr Pro is designed for power planners. Go beyond basic coordination with unlimited scale, persistent collaboration, and advanced travel intelligence.</p>
+    <section class="max-w-5xl mx-auto px-6 mb-32 text-center">
+        <div class="inline-block py-1 px-4 rounded-full bg-indigo-50 text-indigo-600 font-bold text-xs uppercase tracking-widest mb-8 border border-indigo-100 animate-up">Pricing Plans</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-16 animate-up">One upgrade. <br>A lifetime of adventures.</h1>
         
-        <div class="animate-up">
-            <div class="inline-flex flex-col items-center bg-white border border-slate-200 rounded-[3rem] p-2 shadow-2xl">
-                <div class="flex items-center gap-6 px-8 py-4">
-                    <div class="text-left">
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Seekr Pro Annual</p>
-                        <p class="text-2xl font-black">$29.00<span class="text-sm font-medium text-slate-400">/year</span></p>
-                    </div>
-                    <button class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg">Start Free Trial</button>
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto animate-up">
+            <div class="bg-slate-900 rounded-[3rem] p-10 text-white flex flex-col items-center text-center shadow-2xl relative overflow-hidden group">
+                <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:rotate-12 transition-transform duration-700">
+                    <span class="text-8xl">💎</span>
                 </div>
-                <p class="text-[10px] text-slate-400 pb-3 font-medium uppercase tracking-tighter">Save 36% compared to monthly billing</p>
+                <h3 class="text-orange-500 font-bold uppercase tracking-[0.2em] text-xs mb-4">Best Value</h3>
+                <p class="text-4xl font-black mb-2">$199</p>
+                <p class="text-slate-400 font-medium mb-8">One-Time Purchase</p>
+                <div class="flex items-center gap-2 mb-10 text-slate-300 font-semibold text-sm">
+                    <span>👨‍👩‍👧‍👦</span> Shareable with Family
+                </div>
+                <button class="w-full bg-white text-black py-4 rounded-full font-black hover:bg-slate-200 transition transform active:scale-95 shadow-xl">Buy Now</button>
+            </div>
+
+            <div class="bg-white border border-slate-200 rounded-[3rem] p-10 flex flex-col items-center text-center shadow-xl group">
+                <h3 class="text-indigo-600 font-bold uppercase tracking-[0.2em] text-xs mb-4">Annual</h3>
+                <p class="text-4xl font-black mb-2">$29</p>
+                <p class="text-slate-400 font-medium mb-8">1-Year of Seekr Pro</p>
+                <div class="flex items-center gap-2 mb-10 text-slate-500 font-semibold text-sm">
+                    <span>👨‍👩‍👧‍👦</span> Shareable with Family
+                </div>
+                <button class="w-full bg-indigo-600 text-white py-4 rounded-full font-black hover:bg-indigo-700 transition transform active:scale-95 shadow-xl shadow-indigo-200">Start Free Trial</button>
             </div>
         </div>
     </section>
 
     <section class="max-w-6xl mx-auto px-6 mb-40">
         <div class="grid grid-cols-2 md:grid-cols-6 gap-5 auto-rows-[160px] md:auto-rows-[180px]">
-            
             <div class="col-span-2 md:col-span-3 row-span-2 glass-card rounded-[2.5rem] p-10 flex flex-col justify-end relative overflow-hidden group animate-up">
                 <div class="absolute top-10 left-10 text-7xl group-hover:scale-110 transition-transform duration-500">♾️</div>
-                <div class="relative z-10">
-                    <h3 class="text-3xl font-bold mb-3">Unlimited Trips</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Forget the 8-trip limit. Archive, revisit, and manage every adventure you've ever planned without restrictions.</p>
-                </div>
+                <h3 class="text-3xl font-bold mb-3">Unlimited Trips</h3>
+                <p class="text-slate-500 text-sm leading-relaxed max-w-xs">Forget the 8-trip limit. Archive and manage every adventure you've ever planned without restrictions.</p>
             </div>
-
             <div class="col-span-2 md:col-span-3 row-span-1 glass-card bg-indigo-50/30 border-indigo-100/50 rounded-[2.5rem] p-8 flex items-center gap-8 group animate-up">
                 <div class="text-5xl group-hover:rotate-12 transition-transform">🧠</div>
                 <div>
                     <h3 class="text-xl font-bold">Generative Itineraries</h3>
-                    <p class="text-xs text-slate-500 mt-1">Full day-by-day drafts built by the Smart Bridge AI based on your group's unique vibe.</p>
+                    <p class="text-xs text-slate-500 mt-1">Full day-by-day drafts built by the Smart Bridge AI.</p>
                 </div>
             </div>
-
             <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
                 <div class="text-4xl mb-2 group-hover:-translate-y-2 transition-transform">⛺️</div>
                 <h4 class="font-bold text-xs">Group Vault</h4>
-                <p class="text-[9px] text-slate-400 mt-1 uppercase tracking-tighter font-bold">Persistent Gear</p>
             </div>
-
             <div class="col-span-1 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
                 <div class="text-4xl mb-2 group-hover:scale-110 transition-transform">🚀</div>
                 <h4 class="font-bold text-xs">Early Access</h4>
-                <p class="text-[9px] text-slate-400 mt-1 uppercase tracking-tighter font-bold">Beta Features</p>
             </div>
-
             <div class="col-span-2 md:col-span-1 row-span-1 glass-card rounded-[2.5rem] flex flex-col items-center justify-center text-center p-4 group animate-up">
                 <div class="text-4xl mb-2 group-hover:rotate-12 transition-transform">🌤️</div>
                 <h4 class="font-bold text-xs">Seasonality</h4>
-                <p class="text-[9px] text-slate-400 mt-1 uppercase tracking-tighter font-bold">Weather Intel</p>
             </div>
-
             <div class="col-span-2 md:col-span-2 row-span-1 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-[2.5rem] p-8 flex items-center justify-between text-white group animate-up shadow-xl shadow-indigo-200">
                 <div>
                     <h3 class="text-xl font-bold">Large Lobbies</h3>
@@ -93,57 +97,64 @@
                 </div>
                 <div class="text-4xl font-black opacity-90 group-hover:scale-125 transition-transform">59</div>
             </div>
-
-            <div class="col-span-2 md:col-span-3 row-span-1 glass-card bg-emerald-50/30 border-emerald-100/50 rounded-[2.5rem] p-8 flex items-center gap-8 group animate-up">
-                <div class="text-5xl group-hover:scale-110 transition-transform">💸</div>
-                <div>
-                    <h3 class="text-xl font-bold">Weighted Splits</h3>
-                    <p class="text-xs text-slate-500 mt-1">Granular expense tracking. Split by percentage, share, or fixed amount across the whole crew.</p>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <section id="compare" class="py-32 px-6 bg-white border-y border-slate-100">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-bold mb-16 text-center">Free vs. Pro</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left border-collapse">
-                    <thead>
-                        <tr class="border-b border-slate-200">
-                            <th class="py-6 font-bold text-slate-400 uppercase tracking-widest text-[10px]">Feature</th>
-                            <th class="py-6 font-bold text-slate-900 px-8">Seekr Free</th>
-                            <th class="py-6 font-bold text-indigo-600 px-8">Seekr Pro</th>
-                        </tr>
-                    </thead>
-                    <tbody class="text-sm font-medium">
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Active Trips</td><td class="py-6 px-8">Up to 8</td><td class="py-6 px-8 text-indigo-600 font-bold">Unlimited</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Group Members</td><td class="py-6 px-8">Up to 12</td><td class="py-6 px-8 text-indigo-600 font-bold">Up to 59</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Group Vault</td><td class="py-6 px-8">View Only</td><td class="py-6 px-8 text-indigo-600 font-bold">Full Contributor Access</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Smart Bridge AI</td><td class="py-6 px-8">Local Parsing</td><td class="py-6 px-8 text-indigo-600 font-bold">Generative Itineraries</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Best Dates</td><td class="py-6 px-8">Availability Only</td><td class="py-6 px-8 text-indigo-600 font-bold">Weather-Aware Ranking</td></tr>
-                        <tr class="border-b border-slate-50"><td class="py-6 text-slate-500">Early Access</td><td class="py-6 px-8">No</td><td class="py-6 px-8 text-indigo-600 font-bold">Priority Beta Access</td></tr>
-                        <tr><td class="py-6 text-slate-500">Custom Splits</td><td class="py-6 px-8">Equal Only</td><td class="py-6 px-8 text-indigo-600 font-bold">Weighted & Granular</td></tr>
-                    </tbody>
-                </table>
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl font-bold mb-16 text-center tracking-tight">All you can do</h2>
+            
+            <div class="space-y-1">
+                <div class="grid grid-cols-6 py-4 border-b border-slate-100 text-[10px] font-black uppercase tracking-widest text-slate-400">
+                    <div class="col-span-4">Feature</div>
+                    <div class="text-center">Free</div>
+                    <div class="text-center text-indigo-600">Pro</div>
+                </div>
+
+                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Unlimited Trips</div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
+                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Group Vault <span class="block text-[10px] text-slate-400 font-medium">Shared asset tracking</span></div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
+                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Generative Itineraries <span class="block text-[10px] text-slate-400 font-medium">Cloud AI day planning</span></div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
+                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Weather-Aware Ranking</div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
+                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Large Lobbies <span class="block text-[10px] text-slate-400 font-medium">Up to 59 members</span></div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
+                <div class="grid grid-cols-6 py-6 border-b border-slate-50 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Early Access <span class="block text-[10px] text-slate-400 font-medium">Be the first to test features</span></div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
+                <div class="grid grid-cols-6 py-6 items-center">
+                    <div class="col-span-4 font-bold text-slate-700">Fair Share Expenses <span class="block text-[10px] text-slate-400 font-medium">Weighted & percentage splits</span></div>
+                    <div class="text-center text-slate-300">○</div>
+                    <div class="text-center text-indigo-600">●</div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="py-40 px-6 text-center">
-        <h2 class="text-5xl font-bold mb-8 animate-up">Experience the full power.</h2>
-        <div class="animate-up">
-            <button class="bg-black text-white px-12 py-6 rounded-full font-bold text-xl shadow-2xl hover:bg-slate-800 transition transform hover:scale-105">Start Your 7-Day Free Trial</button>
-            <p class="mt-6 text-slate-400 text-sm font-medium">Monthly billing available for $4.99/mo</p>
-        </div>
-    </section>
+    <footer class="bg-white/80 backdrop-blur-md border-t border-slate-200 py-10 px-6 text-center">
+        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">© 2026 SEEKR LLC. App Store, iOS, and Mac are trademarks of Apple Inc.</p>
+    </footer>
 
 </main>
-
-<footer class="bg-white/80 backdrop-blur-md border-t border-slate-200 py-10 px-6 text-center">
-    <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">© 2026 SEEKR LLC. App Store, iOS, and Mac are trademarks of Apple Inc.</p>
-</footer>
 
 <script>
     gsap.registerPlugin(ScrollTrigger);
