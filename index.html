@@ -177,7 +177,7 @@
     </div>
 </section>
 
-    <section id="features" class="py-32 px-6 bg-slate-50 relative overflow-hidden">
+   <section id="features" class="py-32 px-6 bg-slate-50 relative overflow-hidden">
         
         <div class="absolute -top-40 -left-20 w-[800px] h-[800px] hero-bg-purple pointer-events-none z-0"></div>
         <div class="absolute top-40 -right-20 w-[800px] h-[800px] hero-bg-blue pointer-events-none z-0"></div>
@@ -204,13 +204,17 @@
                         </div>
                     </div>
 
-                    <div class="col-span-2 md:col-span-2 row-span-2 bg-gradient-to-b from-slate-800/90 to-black/90 backdrop-blur-2xl border border-slate-700/50 rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-center relative overflow-hidden shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default">
-                        <div class="relative z-10">
-                            <div class="text-blue-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-2 drop-shadow-sm">The Beta is over</div>
-                            <h2 class="text-6xl md:text-7xl font-black text-white tracking-tighter drop-shadow-lg">1.0</h2>
-                            <div class="text-white/60 font-medium text-xs mt-2 uppercase tracking-widest">Seekr for iOS</div>
+                    <div class="col-span-2 md:col-span-2 row-span-2 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-6 flex flex-col transition-all relative overflow-hidden cursor-default">
+                        <div class="relative z-10 w-full mb-4">
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">9 Appearances</h3>
+                            <p class="text-slate-600 font-medium text-xs leading-tight">Native themes for every vibe.</p>
                         </div>
-                        <div class="absolute w-64 h-64 bg-blue-500/20 rounded-full blur-[80px] pointer-events-none"></div>
+                        <div class="grid grid-cols-4 gap-2 flex-grow">
+                            <img src="images/app-light.webp" alt="Light Theme" class="w-full h-auto rounded-xl shadow-md border border-slate-100 object-cover">
+                            <img src="images/app-dark.webp" alt="Dark Theme" class="w-full h-auto rounded-xl shadow-md border border-slate-100 object-cover">
+                            <img src="images/app-ocean.webp" alt="Ocean Theme" class="w-full h-auto rounded-xl shadow-md border border-slate-100 object-cover">
+                            <img src="images/app-desert.webp" alt="Desert Theme" class="w-full h-auto rounded-xl shadow-md border border-slate-100 object-cover">
+                        </div>
                     </div>
 
                     <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-white/60 transition-all relative overflow-hidden cursor-default">
@@ -251,6 +255,15 @@
                             <h4 class="font-bold text-slate-900 text-sm">Polls</h4>
                             <p class="text-[10px] text-slate-500 font-medium mt-0.5">Vote on vibes</p>
                         </div>
+                    </div>
+
+                    <div class="col-span-2 md:col-span-2 row-span-1 bg-gradient-to-b from-slate-800/90 to-black/90 backdrop-blur-2xl border border-slate-700/50 rounded-[2rem] p-8 flex flex-col justify-center items-center text-center relative overflow-hidden shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default">
+                        <div class="relative z-10">
+                            <div class="text-blue-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-2 drop-shadow-sm">The Beta is over</div>
+                            <h2 class="text-5xl md:text-6xl font-black text-white tracking-tighter drop-shadow-lg">1.0</h2>
+                            <div class="text-white/60 font-medium text-[10px] mt-1 uppercase tracking-widest">Seekr for iOS</div>
+                        </div>
+                        <div class="absolute w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none"></div>
                     </div>
 
                     <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-blue-50/40 border border-blue-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-blue-50/60 hover:border-blue-200/80 transition-all relative overflow-hidden cursor-default">
