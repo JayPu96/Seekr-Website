@@ -157,755 +157,455 @@ body {
     </div>
 </header>
 
-<main class="w-full relative overflow-visible">
+<main class="w-full relative">
 
-   <section class="relative pt-32 pb-10 px-6 max-w-6xl mx-auto text-center z-10">
-    <div class="absolute -top-64 -left-20 w-[500px] md:w-[700px] h-[500px] md:h-[700px] hero-bg-blue pointer-events-none z-0 opacity-50"></div>
-    <div class="absolute top-20 -right-20 w-[500px] md:w-[700px] h-[500px] md:h-[700px] hero-bg-purple pointer-events-none z-0 opacity-50"></div>
-
-    <div class="relative z-10">
-        <span class="inline-block py-1 px-4 rounded-full bg-blue-50/50 text-blue-600 font-bold text-xs uppercase tracking-widest mb-8 hero-text border border-blue-100 backdrop-blur-sm">
-            Seekr 1.0 • Social Planning Evolved
-        </span>
-        <h1 class="text-5xl md:text-[5.5rem] font-extrabold tracking-tighter mb-8 hero-text leading-[1.1]">
-            Plan together. <br>
-            Travel together. <br>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Actually enjoy it.</span>
-        </h1>
-        <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto mb-12 hero-text font-medium leading-relaxed">
-            The only travel coordinator built for groups. Real-time syncing, smart polling, and instant expense tracking—native to the Apple ecosystem.
-        </p>
-        
-        <div class="hero-text flex flex-col sm:flex-row justify-center items-center gap-5 mt-8">
-            <button class="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition transform shadow-2xl w-full sm:w-auto flex items-center justify-center gap-3">
-                <img src="images/Apple Logo White.png" alt="Apple Logo" class="h-5 w-auto mb-1">
-                Join iOS Beta
-            </button>
-            <div class="bg-white/60 backdrop-blur-md border border-white/40 px-8 py-3 rounded-full font-medium text-slate-600 w-full sm:w-auto flex flex-col items-center justify-center shadow-lg cursor-default">
-                <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-0.5">Seekr Launching In</span>
-                <div id="app-countdown" class="text-xl font-bold text-slate-900 font-mono tracking-tight">--d --h --m</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="phone-scroll-section" class="relative h-[250vh] w-full mt-10">
-
-    <div class="absolute -top-64 -left-20 w-[500px] md:w-[700px] h-[500px] md:h-[700px] hero-bg-blue pointer-events-none z-0 opacity-50"></div>
-    <div class="absolute top-20 -right-20 w-[500px] md:w-[700px] h-[500px] md:h-[700px] hero-bg-purple pointer-events-none z-0 opacity-50"></div>
-
-    <div class="sticky top-0 h-screen w-full flex flex-col items-center justify-center overflow-visible z-20">
+    <section class="relative pt-40 pb-16 px-6 max-w-6xl mx-auto text-center z-10">
+        <span class="inline-block py-1 px-4 rounded-full bg-blue-50/50 text-blue-600 font-bold text-xs uppercase tracking-widest mb-8 hero-text border border-blue-100 backdrop-blur-sm">
+            Seekr 1.0 • Social Planning Evolved
+        </span>
+        <h1 class="text-5xl md:text-[5.5rem] font-extrabold tracking-tighter mb-8 hero-text leading-[1.1]">
+            Plan together. <br>
+            Travel together. <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Actually enjoy it.</span>
+        </h1>
+        <p class="text-lg md:text-2xl text-slate-500 max-w-3xl mx-auto mb-12 hero-text font-medium leading-relaxed">
+            The only travel coordinator built for groups. Real-time syncing, smart polling, and instant expense tracking—native to the Apple ecosystem.
+        </p>
         
-        <div class="relative h-16 w-full text-center z-40 mb-8 px-6">
-            <h2 id="phone-title-1" class="absolute inset-0 text-3xl md:text-4xl font-bold text-slate-400 tracking-tight">
-                Plan every detail.
-            </h2>
-            <h2 id="phone-title-2" class="absolute inset-0 text-3xl md:text-4xl font-bold text-slate-900 tracking-tight opacity-0 translate-y-8">
-                Collect every memory.
-            </h2>
+        <div class="hero-text flex flex-col sm:flex-row justify-center items-center gap-5 mt-8">
+            <button class="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition transform shadow-2xl w-full sm:w-auto flex items-center justify-center gap-3">
+                <img src="images/Apple Logo White.png" alt="Apple Logo" class="h-5 w-auto mb-1">
+                Join iOS Beta
+            </button>
+            <div class="bg-white/60 backdrop-blur-md border border-slate-200 px-8 py-3 rounded-full font-medium text-slate-600 w-full sm:w-auto flex flex-col items-center justify-center shadow-lg cursor-default h-[60px]">
+                <span class="text-[10px] uppercase tracking-widest text-slate-400 font-bold mb-0.5">Seekr Launching In</span>
+                <div id="app-countdown" class="text-xl font-bold text-slate-900 font-mono tracking-tight leading-none">--d --h --m</div>
+            </div>
         </div>
+    </section>
 
-        <div class="relative w-full max-w-md px-4 md:px-0">
+    <section id="phone-scroll-section" class="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-slate-50 pt-20">
+        
+        <div class="absolute -top-64 -left-20 w-[500px] md:w-[700px] h-[500px] md:h-[700px] hero-bg-blue pointer-events-none z-0 opacity-50"></div>
+        <div class="absolute top-20 -right-20 w-[500px] md:w-[700px] h-[500px] md:h-[700px] hero-bg-purple pointer-events-none z-0 opacity-50"></div>
+
+        <div class="relative w-full flex flex-col items-center z-20">
             
-            <img src="images/hero-mockup.webp" alt="Seekr Interface" class="w-full h-auto relative z-20 border-none outline-none bg-transparent" style="filter: drop-shadow(0 20px 50px rgba(0,0,0,0.15));">
+            <div class="relative h-16 w-full text-center z-40 mb-6 px-6">
+                <h2 id="phone-title-1" class="absolute inset-0 text-3xl md:text-4xl font-bold text-slate-400 tracking-tight">
+                    Plan every detail.
+                </h2>
+                <h2 id="phone-title-2" class="absolute inset-0 text-3xl md:text-4xl font-bold text-slate-900 tracking-tight opacity-0 translate-y-8">
+                    Collect every memory.
+                </h2>
+            </div>
 
-            <div id="app-ui-cards" class="absolute inset-0 z-30">
+            <div class="relative w-full max-w-[280px] md:max-w-[320px]">
                 
-                <div class="absolute hidden xl:flex flex-col -left-[480px] top-24 w-56 glass-card-interactive animate-mobile-drift p-4 rounded-2xl shadow-xl z-30" style="animation-delay: -1.5s;">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-[10px]">🔥</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Popular this Month</p>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between bg-white/50 p-2 rounded-xl border border-yellow-200/50 shadow-sm">
-                            <span class="text-[11px] font-bold text-slate-800 flex items-center gap-2">🏆 Paris</span>
-                            <span class="text-[10px] font-black text-amber-500">#1</span>
-                        </div>
-                        <div class="flex items-center justify-between bg-white/40 p-2 rounded-xl border border-slate-200/50">
-                            <span class="text-[11px] font-bold text-slate-700 flex items-center gap-2">🥈 London</span>
-                            <span class="text-[10px] font-black text-slate-400">#2</span>
-                        </div>
-                        <div class="flex items-center justify-between bg-white/30 p-2 rounded-xl border border-orange-200/30">
-                            <span class="text-[11px] font-bold text-slate-600 flex items-center gap-2">🥉 New York</span>
-                            <span class="text-[10px] font-black text-orange-400">#3</span>
-                        </div>
-                    </div>
-                </div>
+                <img src="images/hero-mockup.webp" alt="Seekr Interface" class="w-full h-auto relative z-20 border-none outline-none bg-transparent drop-shadow-[0_20px_50px_rgba(0,0,0,0.15)]">
 
-                <div class="absolute hidden xl:flex flex-col -right-[480px] top-4 w-60 glass-card-interactive animate-mobile-drift p-4 rounded-2xl shadow-xl z-30" style="animation-delay: -3s;">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center text-[10px]">✨</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">For You</p>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="p-3 bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl border border-pink-100">
-                            <p class="text-[9px] font-bold text-pink-500 uppercase mb-1">Activity Match</p>
-                            <p class="text-[11px] font-bold text-slate-800">Yosemite Trails</p>
-                            <p class="text-[10px] text-slate-500">Perfect for your Hiking preference</p>
-                        </div>
-                        <div class="flex items-center gap-2 px-1">
-                            <div class="w-2 h-2 rounded-full bg-green-400"></div>
-                            <p class="text-[10px] font-medium text-slate-600">Free window found: July 4-7</p>
-                        </div>
-                    </div>
-                </div>
+                <div id="app-ui-cards" class="absolute inset-0 z-30">
+                    
+                    <div class="absolute hidden xl:flex flex-col -left-[400px] top-10 w-56 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-6 h-6 rounded-full bg-orange-100 flex items-center justify-center text-[10px]">🔥</div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Popular this Month</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between bg-white/50 p-2 rounded-xl border border-yellow-200/50 shadow-sm"><span class="text-[11px] font-bold text-slate-800 flex items-center gap-2">🏆 Paris</span><span class="text-[10px] font-black text-amber-500">#1</span></div>
+                            <div class="flex items-center justify-between bg-white/40 p-2 rounded-xl border border-slate-200/50"><span class="text-[11px] font-bold text-slate-700 flex items-center gap-2">🥈 London</span><span class="text-[10px] font-black text-slate-400">#2</span></div>
+                            <div class="flex items-center justify-between bg-white/30 p-2 rounded-xl border border-orange-200/30"><span class="text-[11px] font-bold text-slate-600 flex items-center gap-2">🥉 New York</span><span class="text-[10px] font-black text-orange-400">#3</span></div>
+                        </div>
+                    </div>
 
-                <div class="absolute -right-4 top-10 md:-right-[180px] md:top-24 w-44 md:w-52 glass-card-interactive animate-mobile-drift p-4 rounded-2xl shadow-xl z-30 transition-all">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-[10px]">💳</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Trip Expenses</p>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="flex items-center justify-between text-[11px]">
-                            <span class="flex items-center gap-2">🏠 <span class="text-slate-500">Villa</span></span>
-                            <span class="font-bold text-slate-900">$2,374.00</span>
-                        </div>
-                        <div class="flex items-center justify-between text-[11px]">
-                            <span class="flex items-center gap-2">🍽️ <span class="text-slate-500">Dinner</span></span>
-                            <span class="font-bold text-slate-900">$134.00</span>
-                        </div>
-                        <div class="flex items-center justify-between text-[11px]">
-                            <span class="flex items-center gap-2">🥐 <span class="text-slate-500">Bakery</span></span>
-                            <span class="font-bold text-slate-900">$7.00</span>
-                        </div>
-                    </div>
-                    <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
-                        <span class="text-[9px] font-bold text-slate-400 uppercase">Total</span>
-                        <span class="text-sm font-black text-emerald-600">$2,515.00</span>
-                    </div>
-                </div>
+                    <div class="absolute hidden xl:flex flex-col -right-[400px] top-4 w-60 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center text-[10px]">✨</div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">For You</p>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="p-3 bg-gradient-to-r from-pink-50 to-rose-50 rounded-xl border border-pink-100"><p class="text-[9px] font-bold text-pink-500 uppercase mb-1">Activity Match</p><p class="text-[11px] font-bold text-slate-800">Yosemite Trails</p></div>
+                        </div>
+                    </div>
 
-                <div class="absolute -left-4 top-2/3 md:-left-[240px] md:top-[45%] w-44 md:w-56 glass-card-interactive animate-mobile-drift p-4 rounded-2xl shadow-xl z-30" style="animation-delay: -2s;">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-[10px]">📊</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Poll</p>
-                    </div>
-                    <p class="text-[12px] font-bold text-slate-800 mb-3 leading-tight text-left">Which Rental?</p>
-                    <div class="space-y-4">
-                        <div class="space-y-1.5">
-                            <div class="flex justify-between text-[10px] font-bold text-blue-600">
-                                <span>Modern Villa</span>
-                                <span>75%</span>
-                            </div>
-                            <div class="h-2 w-full bg-slate-100 rounded-full overflow-hidden border border-slate-50">
-                                <div class="h-full bg-blue-500 rounded-full w-[75%]"></div>
-                            </div>
-                        </div>
-                        <div class="space-y-1.5">
-                            <div class="flex justify-between text-[10px] font-bold text-rose-500">
-                                <span>Beach House</span>
-                                <span>25%</span>
-                            </div>
-                            <div class="h-2 w-full bg-slate-100 rounded-full overflow-hidden border border-slate-50">
-                                <div class="h-full bg-rose-500 rounded-full w-[25%]"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                        <div class="flex -space-x-2">
-                            <div class="w-6 h-6 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[10px]">👨🏼‍✈️</div>
-                            <div class="w-6 h-6 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[10px]">⛷️</div>
-                            <div class="w-6 h-6 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[10px]">👱🏽‍♀️</div>
-                            <div class="w-6 h-6 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-[8px] font-bold text-slate-400">+3</div>
-                        </div>
-                        <span class="text-[10px] font-bold text-slate-400 uppercase">6 Votes</span>
-                    </div>
-                </div>
+                    <div class="absolute -right-4 top-10 md:-right-[220px] md:top-[40%] w-44 md:w-52 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-[10px]">💳</div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Trip Expenses</p>
+                        </div>
+                        <div class="mt-3 pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-[9px] font-bold text-slate-400 uppercase">Total</span>
+                            <span class="text-sm font-black text-emerald-600">$2,515.00</span>
+                        </div>
+                    </div>
 
-                <div class="absolute hidden xl:flex flex-col -left-[450px] bottom-10 w-60 glass-card-interactive animate-mobile-drift p-4 rounded-2xl shadow-xl z-30" style="animation-delay: -4s;">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-[10px]">👥</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Seekr Groups</p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-400 to-purple-400 flex items-center justify-center text-sm shadow-md">🏳️‍🌈🧔‍♂️🍕</div>
-                            <div>
-                                <p class="text-[11px] font-bold text-slate-800">SF Boys 🏳️‍🌈</p>
-                                <p class="text-[9px] text-slate-500">8 Members</p>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-400 to-orange-400 flex items-center justify-center text-sm shadow-md">⛷️🐰🏔️✨</div>
-                            <div>
-                                <p class="text-[11px] font-bold text-slate-800">Ski Bunnies</p>
-                                <p class="text-[9px] text-slate-500">5 Members</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <div class="absolute -left-4 top-[55%] md:-left-[240px] md:top-[45%] w-44 md:w-56 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-[10px]">📊</div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Active Poll</p>
+                        </div>
+                        <p class="text-[12px] font-bold text-slate-800 mb-3 text-left">Which Rental?</p>
+                        <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-[10px] font-bold text-slate-400 uppercase">6 Votes</span>
+                        </div>
+                    </div>
 
-                <div class="absolute -right-4 top-[55%] md:-right-[220px] md:top-[50%] hidden lg:flex flex-col w-56 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center text-[10px]">🗓️</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Find Best Dates</p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between gap-3">
-                            <div class="flex flex-col">
-                                <span class="text-[11px] font-bold text-slate-800 leading-none">June 3 – 7</span>
-                                <span class="text-[9px] font-medium text-blue-500 mt-1 uppercase tracking-tighter">Recommended</span>
-                            </div>
-                            <div class="flex -space-x-2">
-                                <div class="w-5 h-5 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-[8px]">👨‍💻</div>
-                                <div class="w-5 h-5 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-[8px]">👱🏽‍♀️</div>
-                                <div class="w-5 h-5 rounded-full border-2 border-white bg-blue-500 flex items-center justify-center text-[7px] font-bold text-white">+4</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center justify-between gap-3">
-                            <div class="flex flex-col">
-                                <span class="text-[11px] font-bold text-slate-800 leading-none">June 20 – 24</span>
-                                <span class="text-[9px] font-medium text-slate-400 mt-1 uppercase tracking-tighter">Alternate</span>
-                            </div>
-                            <div class="flex -space-x-2">
-                                <div class="w-5 h-5 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-[8px]">🦄</div>
-                                <div class="w-5 h-5 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-[8px]">👱🏽‍♀️</div>
-                                <div class="w-5 h-5 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-[7px] font-bold text-slate-500">+1</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-4 pt-3 border-t border-slate-100">
-                        <div class="bg-blue-50/50 p-2 rounded-xl border border-blue-100/50">
-                             <p class="text-[10px] font-semibold text-blue-700 italic leading-tight text-left">
-                                "Early June is the best match for the whole crew"
-                             </p>
-                        </div>
-                    </div>
-                </div>
+                    <div class="absolute hidden lg:flex flex-col -right-[320px] bottom-10 w-56 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-6 h-6 rounded-full bg-amber-100 flex items-center justify-center text-[10px]">🗓️</div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Best Dates</p>
+                        </div>
+                        <div class="bg-blue-50/50 p-2 rounded-xl border border-blue-100/50 mt-2">
+                            <p class="text-[10px] font-semibold text-blue-700 italic leading-tight text-left">"Early June is the best match for the whole crew"</p>
+                        </div>
+                    </div>
 
-                <div class="absolute -left-4 top-[10%] md:-left-[200px] md:top-0 hidden lg:flex flex-col w-64 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center shadow-sm">
-                            <span class="text-[10px] text-white">✨</span>
-                        </div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Seekr Planning AI</p>
-                    </div>
-                    <div class="bg-slate-50/80 border border-slate-100 p-3 rounded-xl flex items-center justify-between gap-3">
-                        <p class="text-[12px] italic text-indigo-900 font-semibold leading-snug text-left">
-                            "Plan me a trip to Berlin the first week of July"
-                        </p>
-                        <span class="text-xs text-indigo-400">⏎</span>
-                    </div>
-                </div>
+                    <div class="absolute hidden lg:flex flex-col -left-[300px] bottom-0 w-64 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
+                        <div class="flex items-center gap-2 mb-3">
+                            <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 flex items-center justify-center"><span class="text-[10px] text-white">✨</span></div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Seekr AI</p>
+                        </div>
+                        <div class="bg-slate-50/80 border border-slate-100 p-3 rounded-xl">
+                            <p class="text-[12px] italic text-indigo-900 font-semibold leading-snug text-left">"Plan me a trip to Berlin the first week of July"</p>
+                        </div>
+                    </div>
+                </div>
 
-                <div class="absolute right-0 bottom-24 md:-right-[120px] md:-bottom-24 hidden lg:flex flex-col w-48 glass-card-interactive p-4 rounded-2xl shadow-xl z-30">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-[10px]">🎒</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Packing List</p>
-                    </div>
-                    <div class="space-y-2.5 text-left">
-            <div class="flex items-center gap-2.5">
-                <div class="w-4 h-4 rounded-full border border-blue-500 bg-blue-500 flex items-center justify-center">
-                    <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M5 13l4 4L19 7"></path></svg>
-                </div>
-                <span class="text-[11px] font-bold text-slate-800">Passport</span>
-            </div>
-
-            <div class="flex items-center gap-2.5">
-                <div class="w-4 h-4 rounded-full border-2 border-slate-200"></div>
-                <span class="text-[11px] font-medium text-slate-500">Charger</span>
-            </div>
-
-            <div class="flex items-center gap-2.5">
-                <div class="w-4 h-4 rounded-full border-2 border-slate-200"></div>
-                <span class="text-[11px] font-medium text-slate-500">Sunscreen</span>
-            </div>
-        </div>
-                    <div class="mt-3 pt-3 border-t border-slate-100">
-                        <div class="h-1 w-full bg-slate-100 rounded-full overflow-hidden">
-                            <div class="h-full bg-blue-500 w-1/3"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="absolute hidden xl:flex flex-col -right-[420px] bottom-0 w-52 glass-card-interactive animate-mobile-drift p-4 rounded-2xl shadow-xl z-30" style="animation-delay: -5s;">
-                    <div class="flex items-center gap-2 mb-3">
-                        <div class="w-6 h-6 rounded-full bg-emerald-100 flex items-center justify-center text-[10px]">✅</div>
-                        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Assign Tasks</p>
-                    </div>
-                    <div class="space-y-3">
-                        <div class="flex items-start gap-3">
-                            <span class="text-[12px] mt-1">📍</span>
-                            <div>
-                                <p class="text-[11px] font-bold text-slate-800">Lookup Activities</p>
-                                <p class="text-[9px] text-rose-500 font-bold">Due Friday</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <span class="text-[12px] mt-1">🛒</span>
-                            <div>
-                                <p class="text-[11px] font-bold text-slate-800">First Grocery Run</p>
-                                <p class="text-[9px] text-slate-400">Due Sunday</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="passport-pins-group" class="absolute inset-0 z-30 pointer-events-none">
+                    <img src="images/USAPin.webp" class="passport-pin absolute -left-10 md:-left-[200px] top-20 w-24 md:w-32 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
+                    <img src="images/Pin_Italy.webp" class="passport-pin absolute -right-5 md:-right-[180px] top-10 w-20 md:w-28 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
+                    <img src="images/Pin_Japan.webp" class="passport-pin absolute -left-5 md:-left-[240px] top-[60%] w-24 md:w-36 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
+                    <img src="images/Pin_France.webp" class="passport-pin absolute -right-10 md:-right-[220px] top-[50%] w-20 md:w-32 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
+                    <img src="images/Pin_Brazil.webp" class="passport-pin absolute -left-16 md:-left-[100px] bottom-10 w-16 md:w-24 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
+                </div>
 
             </div>
+        </div>
+    </section>
 
-            <div id="passport-pins-group" class="absolute inset-0 z-30 pointer-events-none">
-                <img src="images/USAPin.webp" class="passport-pin absolute -left-10 md:-left-[200px] top-20 w-24 md:w-32 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
-                <img src="images/Pin_Italy.webp" class="passport-pin absolute -right-5 md:-right-[180px] top-10 w-20 md:w-28 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
-                <img src="images/Pin_Japan.webp" class="passport-pin absolute -left-5 md:-left-[240px] top-[60%] w-24 md:w-36 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
-                <img src="images/Pin_France.webp" class="passport-pin absolute -right-10 md:-right-[220px] top-[50%] w-20 md:w-32 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
-                <img src="images/Pin_Brazil.webp" class="passport-pin absolute -left-16 md:-left-[100px] bottom-10 w-16 md:w-24 h-auto drop-shadow-[0_15px_15px_rgba(0,0,0,0.3)]">
+    <section class="py-24 px-6 bg-white border-y border-slate-100 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto relative">
+            <div class="hidden md:block absolute top-16 left-[16%] right-[16%] border-t-2 border-dashed border-slate-200 z-0"></div>
+            <div class="grid md:grid-cols-3 gap-12 text-center relative z-10">
+                <div class="animate-up group">
+                    <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <div class="absolute left-0 top-4 text-3xl -rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform">🙋‍♂️</div>
+                        <div class="z-10 bg-white border border-amber-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-xl shadow-amber-500/10">💡</div>
+                        <div class="absolute right-0 bottom-4 text-3xl rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-75">🙋‍♀️</div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Start with an <span class="text-yellow-400 drop-shadow-[0_1.5px_2px_rgba(180,140,0,0.4)]">Idea</span></h3>
+                    <p class="text-slate-500 leading-relaxed px-4">Drop TikToks, vibe checks, and vague concepts into the lobby. Let the group vote before anyone commits.</p>
+                </div>
+                <div class="animate-up group" style="animation-delay: 100ms;">
+                    <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <div class="absolute left-2 bottom-2 text-3xl -rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform">💬</div>
+                        <div class="z-10 bg-white border border-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-xl shadow-blue-500/10">📍</div>
+                        <div class="absolute right-0 top-2 text-3xl rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-75">🗓️</div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Keep on <span class="text-blue-500 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]">Planning</span></h3>
+                    <p class="text-slate-500 leading-relaxed px-4">Sync calendars, pin hotel addresses, and turn chaotic group chats into a structured, actionable itinerary.</p>
+                </div>
+                <div class="animate-up group" style="animation-delay: 200ms;">
+                    <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
+                        <div class="absolute left-0 top-4 text-2xl -rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform">🗼</div>
+                        <div class="absolute right-0 top-0 text-3xl rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-75">🥐</div>
+                        <div class="z-10 bg-white border border-emerald-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-xl shadow-emerald-500/10">✅</div>
+                        <div class="absolute left-1/2 -translate-x-1/2 -bottom-2 text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-150">💸</div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Get it <span class="text-emerald-500 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]">Booked</span></h3>
+                    <p class="text-slate-500 leading-relaxed px-4">Split expenses globally, access tickets offline, and enjoy the journey with everything in one place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-32 px-6 bg-slate-50 relative overflow-hidden">
+        <div class="absolute -top-40 -left-20 w-[800px] h-[800px] hero-bg-purple pointer-events-none z-0"></div>
+        <div class="absolute top-40 -right-20 w-[800px] h-[800px] hero-bg-blue pointer-events-none z-0"></div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="glass-table rounded-[3rem] p-8 md:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.04)] border border-white/60 mx-auto w-full animate-up relative overflow-hidden">
+                
+                <div class="mb-14 text-center md:text-left px-2">
+                    <div class="text-slate-500 font-bold mb-3 uppercase tracking-[0.2em] text-xs">Everything New</div>
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
+                        Organize everything.<br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">One release.</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-5 auto-rows-[160px] md:auto-rows-[160px]">
+
+                    <div class="col-span-2 row-span-1 glass-card bg-emerald-50/40 border-emerald-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-emerald-50/60 transition-all relative overflow-hidden cursor-default">
+                        <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform">⚡</div>
+                        <div class="relative z-10 w-2/3">
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">Smart Bridge AI</h3>
+                            <p class="text-emerald-800/70 font-medium text-xs leading-tight">Lightning-fast on-device parsing.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-2 row-span-2 bg-gradient-to-b from-slate-800/90 to-black/90 backdrop-blur-2xl border border-slate-700/50 rounded-[2rem] p-8 flex flex-col justify-center items-center text-center relative overflow-hidden shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default">
+                        <div class="relative z-10">
+                            <div class="text-blue-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-2 drop-shadow-sm">The Beta is over</div>
+                            <h2 class="text-5xl md:text-6xl font-black text-white tracking-tighter drop-shadow-lg">1.0</h2>
+                            <div class="text-white/60 font-medium text-[10px] mt-1 uppercase tracking-widest">Seekr for iOS</div>
+                        </div>
+                        <div class="absolute w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none"></div>
+                    </div>
+
+                    <div class="col-span-2 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-white/60 transition-all relative overflow-hidden cursor-default">
+                        <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform">🗂️</div>
+                        <div class="relative z-10 w-2/3">
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">The Hub</h3>
+                            <p class="text-slate-600 font-medium text-xs leading-tight">Forward emails to organize instantly.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
+                        <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform">📅</div>
+                        <div><h4 class="font-bold text-slate-900 text-sm">Calendar</h4><p class="text-[10px] text-slate-500 font-medium mt-0.5">Apple Sync</p></div>
+                    </div>
+                    
+                    <div class="col-span-1 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
+                        <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform">📍</div>
+                        <div><h4 class="font-bold text-slate-900 text-sm">Map View</h4><p class="text-[10px] text-slate-500 font-medium mt-0.5">Plot every stop</p></div>
+                    </div>
+
+                    <div class="col-span-1 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
+                        <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform">⛺️</div>
+                        <div><h4 class="font-bold text-slate-900 text-sm">Vault</h4><p class="text-[10px] text-slate-500 font-medium mt-0.5">Shared gear</p></div>
+                    </div>
+
+                    <div class="col-span-1 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
+                        <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform">📊</div>
+                        <div><h4 class="font-bold text-slate-900 text-sm">Polls</h4><p class="text-[10px] text-slate-500 font-medium mt-0.5">Vote on vibes</p></div>
+                    </div>
+
+                    <div class="col-span-2 row-span-1 glass-card bg-blue-50/40 border-blue-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-blue-50/60 transition-all relative overflow-hidden cursor-default">
+                        <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform">💳</div>
+                        <div class="relative z-10 w-2/3">
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">Global Expenses</h3>
+                            <p class="text-blue-800/70 font-medium text-xs leading-tight">Fair settling in any currency.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-1 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
+                        <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform">✈️</div>
+                        <div><h4 class="font-bold text-slate-900 text-sm">Offline</h4><p class="text-[10px] text-slate-500 font-medium mt-0.5">Always available</p></div>
+                    </div>
+
+                    <div class="col-span-1 row-span-1 glass-card bg-white/40 border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
+                        <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform">🎒</div>
+                        <div><h4 class="font-bold text-slate-900 text-sm">Packing</h4><p class="text-[10px] text-slate-500 font-medium mt-0.5">Sync lists</p></div>
+                    </div>
+
+                    <div class="col-span-2 row-span-1 glass-card bg-purple-50/40 border-purple-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-purple-50/60 transition-all relative overflow-hidden cursor-default">
+                        <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform">🌤️</div>
+                        <div class="relative z-10 w-2/3">
+                            <h3 class="text-lg font-bold text-slate-900 mb-1">Availability Sync</h3>
+                            <p class="text-purple-800/70 font-medium text-xs leading-tight">Find optimal dates effortlessly.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6 bg-white overflow-hidden">
+        <div class="max-w-6xl mx-auto space-y-40">
+            <div class="flex flex-col md:flex-row items-center gap-20 animate-up">
+                <div class="flex-1">
+                    <div class="text-indigo-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">The Genesis</div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Start before it's booked.</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-6">Most travel apps only care about your trip after you’ve bought the flights. Seekr is built for the brainstorm.</p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 items-start"><span class="text-xl">💡</span><span class="text-slate-600"><strong class="text-slate-900">Choose Your Priority:</strong> Create a trip as an Idea, move it to Planning as it gains momentum, or let Seekr automatically mark it as Booked.</span></li>
+                        <li class="flex gap-4 items-start"><span class="text-xl">🤝</span><span class="text-slate-600"><strong class="text-slate-900">Early Collaboration:</strong> Invite participants to develop the itinerary together before a single dollar is spent.</span></li>
+                    </ul>
+                </div>
+                <div class="flex-1 relative w-full aspect-square md:aspect-auto">
+                    <img src="images/ideas-board.png" alt="Ideas Board" class="w-full h-auto rounded-3xl drop-shadow-2xl">
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-20 animate-up">
+                <div class="flex-1">
+                    <div class="text-blue-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">Find Best Dates</div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">End the "When are you free?" texts.</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-6">No more spreadsheets. Seekr uses "My Availability" to cross-reference everyone's personal schedules and find the optimal timeframe.</p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 items-start"><span class="text-xl">🌤️</span><span class="text-slate-600"><strong class="text-slate-900">Weather & Seasonality:</strong> Blends your group's availability with real-time seasonal data for the perfect window.</span></li>
+                        <li class="flex gap-4 items-start"><span class="text-xl">⏱️</span><span class="text-slate-600"><strong class="text-slate-900">Flexible Routing:</strong> Search for specific hard dates, or let Seekr find the best 5-day stretch this winter.</span></li>
+                    </ul>
+                </div>
+                <div class="flex-1 relative w-full aspect-square md:aspect-auto">
+                    <img src="images/best-dates.png" alt="Best Dates" class="w-full h-auto rounded-3xl drop-shadow-2xl">
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-20 animate-up">
+                <div class="flex-1">
+                    <div class="text-rose-500 font-bold mb-6 uppercase tracking-[0.2em] text-xs">The Hub</div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">All trip activities in one place.</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-6">Flights, stays, and activities organized effortlessly so you can focus on enjoying the journey.</p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 items-start"><span class="text-xl">🪄</span><span class="text-slate-600"><strong class="text-slate-900">Auto-Magic Timeline:</strong> Seekr builds your itinerary automatically as you forward reservation emails.</span></li>
+                        <li class="flex gap-4 items-start"><span class="text-xl">🗂️</span><span class="text-slate-600"><strong class="text-slate-900">Always Accessible:</strong> Keep all your confirmation numbers, addresses, and tickets in one offline-ready place.</span></li>
+                    </ul>
+                </div>
+                <div class="flex-1 relative w-full aspect-square md:aspect-auto">
+                    <img src="images/itinerary.png" alt="The Hub" class="w-full h-auto rounded-3xl drop-shadow-2xl">
+                </div>
+            </div>
+
+            <div class="animate-up">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <div class="text-purple-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">Groups. Supercharged.</div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8">The ultimate Planning Lobby.</h2>
+                    <p class="text-slate-500 text-lg">Whether it’s an annual reunion or a trip to Burning Man, Seekr Groups provide a persistent home for your travel crews. Maintain a core circle of <strong class="text-slate-700">Members</strong>, and selectively choose who becomes a <strong class="text-slate-700">Participant</strong> for specific trips.</p>
+                </div>
+                <div class="w-[100vw] max-w-[1400px] relative left-1/2 -translate-x-1/2" style="-webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
+                    <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-[5%] md:px-[10%] [&::-webkit-scrollbar]:hidden">
+                        <div class="glass-card bg-gradient-to-br from-orange-100/80 to-white/40 border-orange-200/50 rounded-[2.5rem] p-10 flex-none w-[85vw] md:w-[450px] snap-start shadow-orange-500/5">
+                            <div class="absolute -right-10 -top-10 text-9xl opacity-5">⛺️</div>
+                            <h3 class="text-2xl font-bold mb-4">The Group Vault</h3>
+                            <p class="text-slate-600 mb-6 h-24">A persistent repository of group-owned gear. Track exactly who owns the tents, power banks, and kitchen supplies so you’re always packed.</p>
+                            <img src="images/vault.png" alt="Vault" class="w-full rounded-xl shadow-sm">
+                        </div>
+                        <div class="glass-card bg-gradient-to-br from-rose-100/80 to-white/40 border-rose-200/50 rounded-[2.5rem] p-10 flex-none w-[85vw] md:w-[450px] snap-start shadow-rose-500/5">
+                            <div class="absolute -right-10 -top-10 text-9xl opacity-5">💡</div>
+                            <h3 class="text-2xl font-bold mb-4">Suggest an Idea</h3>
+                            <p class="text-slate-600 mb-6 h-24">Before a trip even exists, any member can suggest an idea for a low-pressure vibe check: <em>"The weather looks great, who's interested in a getaway?"</em></p>
+                            <img src="images/roles.png" alt="Permissions" class="w-full rounded-xl shadow-sm">
+                        </div>
+                        <div class="glass-card bg-gradient-to-br from-purple-100/80 to-white/40 border-purple-200/50 rounded-[2.5rem] p-10 flex-none w-[85vw] md:w-[450px] snap-start shadow-purple-500/5">
+                            <div class="absolute -right-10 -top-10 text-9xl opacity-5">🗓️</div>
+                            <h3 class="text-2xl font-bold mb-4">Always in Sync</h3>
+                            <p class="text-slate-600 mb-6 h-24">Share your schedule once or sync your Personal Availability. Seekr instantly shows when the whole crew is free.</p>
+                            <img src="images/group-availability.png" alt="Group Availability" class="w-full rounded-xl shadow-sm">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-20 animate-up">
+                <div class="flex-1">
+                    <div class="text-emerald-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">Seekr Planning Models</div>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Plan at the speed of thought.</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed mb-6">Seekr’s Smart Bridge uses a three-tier intelligent routing system to turn messy thoughts into perfect plans instantly.</p>
+                    <ul class="space-y-4">
+                        <li class="flex gap-4 items-start"><span class="text-xl">⚡</span><span class="text-slate-600"><strong class="text-slate-900">QuickCapture Bar:</strong> Type "Ski trip to Utah" and let local on-device parsing extract details instantly and privately.</span></li>
+                        <li class="flex gap-4 items-start"><span class="text-xl">🧠</span><span class="text-slate-600"><strong class="text-slate-900">Cloud AI:</strong> Let generative models build day-by-day itineraries or build an afternoon around your existing meetings.</span></li>
+                    </ul>
+                </div>
+                <div class="flex-1 relative w-full aspect-square md:aspect-auto">
+                    <img src="images/ai-capture.png" alt="AI Quick Capture" class="w-full h-auto rounded-3xl drop-shadow-2xl">
+                </div>
+            </div>
+
+            <div class="animate-up border-t border-slate-100 pt-32">
+                <div class="grid md:grid-cols-2 gap-20">
+                    <div>
+                        <div class="text-3xl mb-6">🗓️</div>
+                        <h3 class="text-3xl font-bold mb-4">Your schedule in perfect harmony.</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed mb-8">Connect your itinerary directly with your Apple Calendar. View flights, stays, and dinner reservations right alongside your daily meetings and events—all in one organized schedule.</p>
+                        <img src="images/calendar.png" alt="Calendar" class="w-full h-auto rounded-3xl border border-slate-100">
+                    </div>
+                    <div>
+                        <div class="text-3xl mb-6">💳</div>
+                        <h3 class="text-3xl font-bold mb-4">Fair settling, globally.</h3>
+                        <p class="text-slate-500 text-lg leading-relaxed mb-8">Keep a close eye on your budget in any currency. All participants can log their own contributions, and Seekr calculates the math instantly, making finances effortless for everyone.</p>
+                        <img src="images/expenses.png" alt="Expenses" class="w-full h-auto rounded-3xl border border-slate-100">
+                    </div>
+                </div>
             </div>
 
         </div>
-    </div>
-</section>
+    </section>
 
-<style>
-    @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-15px); }
-    }
-    .animate-float {
-        animation: float 5s ease-in-out infinite;
-    }
-</style>
+    <section id="compare" class="py-32 px-6 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 animate-up">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Seekr vs. The Others</h2>
+                <p class="text-slate-500 text-lg">See why Seekr is the new standard for modern travel crews.</p>
+            </div>
+            <div class="glass-table rounded-[2.5rem] overflow-x-auto shadow-2xl animate-up border border-slate-200">
+                <table class="w-full text-left border-collapse min-w-[800px]">
+                    <thead>
+                        <tr class="bg-slate-100/80 border-b border-slate-200">
+                            <th class="p-8 font-bold text-slate-900 w-1/4">The Planning Engine</th>
+                            <th class="p-8 font-bold text-blue-600 bg-blue-50/50 border-x border-blue-100/50 text-center">
+                                <div class="flex flex-col items-center gap-2">
+                                    <span class="text-xs uppercase tracking-widest opacity-60">The Pro Choice</span>
+                                    Seekr
+                                </div>
+                            </th>
+                            <th class="p-8 font-semibold text-slate-500 text-center">Tripsy</th>
+                            <th class="p-8 font-semibold text-slate-500 text-center">TripIt</th>
+                            <th class="p-8 font-semibold text-slate-500 text-center">Flighty</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm">
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8"><div class="font-bold text-slate-900 mb-1">The Genesis Phase</div><div class="text-slate-500 text-xs">Ideas & Brainstorming stages</div></td>
+                            <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Full Lifecycle</td>
+                            <td class="p-8 text-slate-400 text-center">❌ Booked only</td>
+                            <td class="p-8 text-slate-400 text-center">❌ Confirmation only</td>
+                            <td class="p-8 text-slate-400 text-center">❌ Flight only</td>
+                        </tr>
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8"><div class="font-bold text-slate-900 mb-1">Availability Sync</div><div class="text-slate-500 text-xs">Finding "Best Dates" automatically</div></td>
+                            <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Smart Matching</td>
+                            <td class="p-8 text-slate-400 text-center">❌ Manual</td>
+                            <td class="p-8 text-slate-400 text-center">❌ Manual</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No</td>
+                        </tr>
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8"><div class="font-bold text-slate-900 mb-1">The Group Vault</div><div class="text-slate-500 text-xs">Persistent shared gear & asset tracking</div></td>
+                            <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Persistent</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No</td>
+                        </tr>
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8"><div class="font-bold text-slate-900 mb-1">Expense Core</div><div class="text-slate-500 text-xs">Global splitting & multi-currency</div></td>
+                            <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Pro Splitting</td>
+                            <td class="p-8 text-slate-600 text-center">⚠️ Basic Lists</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No</td>
+                        </tr>
+                        <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
+                            <td class="p-8"><div class="font-bold text-slate-900 mb-1">Smart Bridge AI</div><div class="text-slate-500 text-xs">Local + Cloud intelligent parsing</div></td>
+                            <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Privacy-First</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No AI</td>
+                            <td class="p-8 text-slate-600 text-center">⚠️ Server-side</td>
+                            <td class="p-8 text-slate-400 text-center">❌ No AI</td>
+                        </tr>
+                        <tr class="group hover:bg-white transition-colors">
+                            <td class="p-8"><div class="font-bold text-slate-900 mb-1">Social Lobby</div><div class="text-slate-500 text-xs">Persistent Groups vs. One-off Trips</div></td>
+                            <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium rounded-b-[2.5rem]">✅ Member System</td>
+                            <td class="p-8 text-slate-600 text-center">⚠️ Guests only</td>
+                            <td class="p-8 text-slate-600 text-center">⚠️ Shared view</td>
+                            <td class="p-8 text-slate-600 text-center">⚠️ Friends only</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-12 text-center text-slate-400 text-sm italic">
+                * Comparison based on public feature sets as of April 2026. Seekr requires iOS 17 or later.
+            </div>
+        </div>
+    </section>
 
-    <section class="py-24 px-6 bg-white border-y border-slate-100 relative overflow-hidden">
-    <div class="max-w-6xl mx-auto relative">
-        
-        <div class="hidden md:block absolute top-16 left-[16%] right-[16%] border-t-2 border-dashed border-slate-200 z-0"></div>
-
-        <div class="grid md:grid-cols-3 gap-12 text-center relative z-10">
-            
-            <div class="animate-up group">
-                <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                    <div class="absolute left-0 top-4 text-3xl -rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform">🙋‍♂️</div>
-                    <div class="z-10 bg-white border border-amber-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-xl shadow-amber-500/10">💡</div>
-                    <div class="absolute right-0 bottom-4 text-3xl rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-75">🙋‍♀️</div>
-                </div>
-                
-                <h3 class="text-xl font-bold mb-3 text-slate-900">
-                    Start with an 
-                    <span class="text-yellow-400 drop-shadow-[0_1.5px_2px_rgba(180,140,0,0.4)]">Idea</span>
-                </h3>
-                <p class="text-slate-500 leading-relaxed px-4">Drop TikToks, vibe checks, and vague concepts into the lobby. Let the group vote before anyone commits.</p>
-            </div>
-
-            <div class="animate-up group" style="animation-delay: 100ms;">
-                <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                    <div class="absolute left-2 bottom-2 text-3xl -rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform">💬</div>
-                    <div class="z-10 bg-white border border-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-xl shadow-blue-500/10">📍</div>
-                    <div class="absolute right-0 top-2 text-3xl rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-75">🗓️</div>
-                </div>
-
-                <h3 class="text-xl font-bold mb-3 text-slate-900">
-                    Keep on 
-                    <span class="text-blue-500 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]">Planning</span>
-                </h3>
-                <p class="text-slate-500 leading-relaxed px-4">Sync calendars, pin hotel addresses, and turn chaotic group chats into a structured, actionable itinerary.</p>
-            </div>
-
-            <div class="animate-up group" style="animation-delay: 200ms;">
-                <div class="relative w-32 h-32 mx-auto mb-6 flex items-center justify-center">
-                    <div class="absolute left-0 top-4 text-2xl -rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform">🗼</div>
-                    <div class="absolute right-0 top-0 text-3xl rotate-12 drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-75">🥐</div>
-                    <div class="z-10 bg-white border border-emerald-100 w-20 h-20 rounded-full flex items-center justify-center text-4xl shadow-xl shadow-emerald-500/10">✅</div>
-                    <div class="absolute left-1/2 -translate-x-1/2 -bottom-2 text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform delay-150">💸</div>
-                </div>
-
-                <h3 class="text-xl font-bold mb-3 text-slate-900">
-                    Get it 
-                    <span class="text-emerald-500 drop-shadow-[0_1px_2px_rgba(0,0,0,0.2)]">Booked</span>
-                </h3>
-                <p class="text-slate-500 leading-relaxed px-4">Split expenses globally, access tickets offline, and enjoy the journey with everything in one place.</p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-   <section id="features" class="py-32 px-6 bg-slate-50 relative overflow-hidden">
-    <div class="absolute -top-40 -left-20 w-[800px] h-[800px] hero-bg-purple pointer-events-none z-0"></div>
-    <div class="absolute top-40 -right-20 w-[800px] h-[800px] hero-bg-blue pointer-events-none z-0"></div>
-
-    <div class="max-w-6xl mx-auto relative z-10">
-        <div class="glass-table rounded-[3rem] p-8 md:p-12 shadow-[0_20px_40px_rgba(0,0,0,0.04)] border border-white/60 mx-auto w-full animate-up relative overflow-hidden">
-            
-            <div class="mb-14 text-center md:text-left px-2">
-                <div class="text-slate-500 font-bold mb-3 uppercase tracking-[0.2em] text-xs">Everything New</div>
-                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-slate-900">
-                    Organize everything.<br>
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">One release.</span>
-                </h2>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-5 auto-rows-[160px] md:auto-rows-[150px]">
-
-                <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-emerald-50/40 border border-emerald-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-emerald-50/60 hover:border-emerald-200/80 transition-all relative overflow-hidden cursor-default">
-                    <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform duration-500">⚡</div>
-                    <div class="relative z-10 w-2/3">
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">Smart Bridge AI</h3>
-                        <p class="text-emerald-800/70 font-medium text-xs leading-tight">Lightning-fast on-device parsing.</p>
-                    </div>
-                </div>
-
-                <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between transition-all relative overflow-hidden cursor-default">
-                    <div class="grid grid-cols-4 gap-2">
-                        <img src="images/hero-mockup.webp" alt="Light" class="w-full aspect-square rounded-xl shadow-sm border border-slate-100 object-cover">
-                        <img src="images/Hero Mockup copy.jpg" alt="Dark" class="w-full aspect-square rounded-xl shadow-sm border border-slate-100 object-cover">
-                        <img src="images/Hero Mockup copy.jpg" alt="Ocean" class="w-full aspect-square rounded-xl shadow-sm border border-slate-100 object-cover">
-                        <img src="images/hero-mockup.webp" alt="Desert" class="w-full aspect-square rounded-xl shadow-sm border border-slate-100 object-cover">
-                    </div>
-                    <h3 class="text-sm font-bold text-slate-900 text-center">9 Appearances</h3>
-                </div>
-
-                <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-white/60 transition-all relative overflow-hidden cursor-default">
-                    <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform duration-500">🗂️</div>
-                    <div class="relative z-10 w-2/3">
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">The Hub</h3>
-                        <p class="text-slate-600 font-medium text-xs leading-tight">Forward emails to organize instantly.</p>
-                    </div>
-                </div>
-
-                <div class="col-span-1 md:col-span-1 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
-                    <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform duration-300">📅</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Calendar</h4>
-                        <p class="text-[10px] text-slate-500 font-medium mt-0.5">Apple Sync</p>
-                    </div>
-                </div>
-
-                <div class="col-span-1 md:col-span-1 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
-                    <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform duration-300">📍</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Map View</h4>
-                        <p class="text-[10px] text-slate-500 font-medium mt-0.5">Plot every stop</p>
-                    </div>
-                </div>
-
-                <div class="col-span-2 md:col-span-2 row-span-1 bg-gradient-to-b from-slate-800/90 to-black/90 backdrop-blur-2xl border border-slate-700/50 rounded-[2rem] p-8 flex flex-col justify-center items-center text-center relative overflow-hidden shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default">
-                    <div class="relative z-10">
-                        <div class="text-blue-400 font-bold uppercase tracking-[0.3em] text-[10px] mb-2 drop-shadow-sm">The Beta is over</div>
-                        <h2 class="text-5xl md:text-6xl font-black text-white tracking-tighter drop-shadow-lg">1.0</h2>
-                        <div class="text-white/60 font-medium text-[10px] mt-1 uppercase tracking-widest">Seekr for iOS</div>
-                    </div>
-                    <div class="absolute w-64 h-64 bg-blue-500/10 rounded-full blur-[80px] pointer-events-none"></div>
-                </div>
-
-                <div class="col-span-1 md:col-span-1 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
-                    <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform duration-300">⛺️</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Vault</h4>
-                        <p class="text-[10px] text-slate-500 font-medium mt-0.5">Shared gear</p>
-                    </div>
-                </div>
-
-                <div class="col-span-1 md:col-span-1 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
-                    <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform duration-300">📊</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Polls</h4>
-                        <p class="text-[10px] text-slate-500 font-medium mt-0.5">Vote on vibes</p>
-                    </div>
-                </div>
-
-                <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-blue-50/40 border border-blue-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-blue-50/60 hover:border-blue-200/80 transition-all relative overflow-hidden cursor-default">
-                    <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform duration-500">💳</div>
-                    <div class="relative z-10 w-2/3">
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">Global Expenses</h3>
-                        <p class="text-blue-800/70 font-medium text-xs leading-tight">Fair settling in any currency.</p>
-                    </div>
-                </div>
-
-                <div class="col-span-1 md:col-span-1 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
-                    <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform duration-300">✈️</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Offline</h4>
-                        <p class="text-[10px] text-slate-500 font-medium mt-0.5">Always available</p>
-                    </div>
-                </div>
-
-                <div class="col-span-1 md:col-span-1 row-span-1 glass-card bg-white/40 border border-white/50 rounded-[2rem] p-5 flex flex-col justify-between group hover:bg-white/70 transition-all cursor-default">
-                    <div class="text-3xl drop-shadow-sm group-hover:-translate-y-1 transition-transform duration-300">🎒</div>
-                    <div>
-                        <h4 class="font-bold text-slate-900 text-sm">Packing</h4>
-                        <p class="text-[10px] text-slate-500 font-medium mt-0.5">Syncing lists</p>
-                    </div>
-                </div>
-
-                <div class="col-span-2 md:col-span-2 row-span-1 glass-card bg-purple-50/40 border border-purple-100/50 rounded-[2rem] p-6 flex flex-col justify-center group hover:bg-purple-50/60 hover:border-purple-200/80 transition-all relative overflow-hidden cursor-default">
-                    <div class="absolute right-6 top-1/2 -translate-y-1/2 text-5xl opacity-80 drop-shadow-sm group-hover:scale-110 transition-transform duration-500">🌤️</div>
-                    <div class="relative z-10 w-2/3">
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">Availability Sync</h3>
-                        <p class="text-purple-800/70 font-medium text-xs leading-tight">Find optimal dates effortlessly.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="py-32 px-6 bg-white overflow-hidden">
-    <div class="max-w-6xl mx-auto space-y-40">
-        
-        <div class="flex flex-col md:flex-row items-center gap-20 animate-up">
-            <div class="flex-1">
-                <div class="text-indigo-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">The Genesis</div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Start before it's booked.</h2>
-                <p class="text-slate-500 text-lg leading-relaxed mb-6">Most travel apps only care about your trip after you’ve bought the flights. Seekr is built for the brainstorm.</p>
-                <ul class="space-y-4">
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">💡</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Choose Your Priority:</strong> Create a trip as an Idea, move it to Planning as it gains momentum, or let Seekr automatically mark it as Booked.</span>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">🤝</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Early Collaboration:</strong> Invite participants to develop the itinerary together before a single dollar is spent.</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-1 relative w-full aspect-square md:aspect-auto">
-                <img src="images/ideas-board.png" alt="Ideas Board" class="w-full h-auto rounded-3xl drop-shadow-2xl">
-            </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row-reverse items-center gap-20 animate-up">
-            <div class="flex-1">
-                <div class="text-blue-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">Find Best Dates</div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">End the "When are you free?" texts.</h2>
-                <p class="text-slate-500 text-lg leading-relaxed mb-6">No more spreadsheets. Seekr uses "My Availability" to cross-reference everyone's personal schedules and find the optimal timeframe.</p>
-                <ul class="space-y-4">
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">🌤️</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Weather & Seasonality:</strong> Blends your group's availability with real-time seasonal data for the perfect window.</span>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">⏱️</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Flexible Routing:</strong> Search for specific hard dates, or let Seekr find the best 5-day stretch this winter.</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-1 relative w-full aspect-square md:aspect-auto">
-                <img src="images/best-dates.png" alt="Best Dates" class="w-full h-auto rounded-3xl drop-shadow-2xl">
-            </div>
-        </div>
-
-        <div class="flex flex-col md:flex-row items-center gap-20 animate-up">
-            <div class="flex-1">
-                <div class="text-rose-500 font-bold mb-6 uppercase tracking-[0.2em] text-xs">The Hub</div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">All trip activities in one place.</h2>
-                <p class="text-slate-500 text-lg leading-relaxed mb-6">Flights, stays, and activities organized effortlessly so you can focus on enjoying the journey.</p>
-                <ul class="space-y-4">
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">🪄</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Auto-Magic Timeline:</strong> Seekr builds your itinerary automatically as you forward reservation emails.</span>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">🗂️</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Always Accessible:</strong> Keep all your confirmation numbers, addresses, and tickets in one offline-ready place.</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-1 relative w-full aspect-square md:aspect-auto">
-                <img src="images/itinerary.png" alt="The Hub" class="w-full h-auto rounded-3xl drop-shadow-2xl">
-            </div>
-        </div>
-        
-        
-       <div class="animate-up">
-    <div class="text-center max-w-3xl mx-auto mb-16">
-        <div class="text-purple-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">Groups. Supercharged.</div>
-        <h2 class="text-4xl md:text-5xl font-bold mb-8">The ultimate Planning Lobby.</h2>
-        <p class="text-slate-500 text-lg">Whether it’s an annual reunion or a trip to Burning Man, Seekr Groups provide a persistent home for your travel crews. Maintain a core circle of <strong class="text-slate-700">Members</strong>, and selectively choose who becomes a <strong class="text-slate-700">Participant</strong> for specific trips.</p>
-    </div>
-    
-    <div class="w-[100vw] max-w-[1400px] relative left-1/2 -translate-x-1/2"
-         style="-webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%); mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);">
-
-        <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-12 px-[5%] md:px-[10%] [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-            
-            <div class="glass-card bg-gradient-to-br from-orange-100/80 to-white/40 border border-orange-200/50 rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden flex-none w-[85vw] md:w-[450px] snap-start shadow-orange-500/5">
-                <div class="absolute -right-10 -top-10 text-9xl opacity-5">⛺️</div>
-                <h3 class="text-2xl font-bold mb-4">The Group Vault</h3>
-                <p class="text-slate-600 leading-relaxed mb-6 h-24">A persistent repository of group-owned gear. Track exactly who owns the tents, power banks, and kitchen supplies so you’re always packed.</p>
-                <img src="images/vault.png" alt="Vault" class="w-full h-auto rounded-xl shadow-sm">
-            </div>
-
-            <div class="glass-card bg-gradient-to-br from-rose-100/80 to-white/40 border border-rose-200/50 rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden flex-none w-[85vw] md:w-[450px] snap-start shadow-rose-500/5">
-                <div class="absolute -right-10 -top-10 text-9xl opacity-5">💡</div>
-                <h3 class="text-2xl font-bold mb-4">Suggest an Idea</h3>
-                <p class="text-slate-600 leading-relaxed mb-6 h-24">Before a trip even exists, any member can suggest an idea for a low-pressure vibe check: <em>"The weather looks great, who's interested in a getaway?"</em></p>
-                <img src="images/roles.png" alt="Permissions" class="w-full h-auto rounded-xl shadow-sm">
-            </div>
-
-            <div class="glass-card bg-gradient-to-br from-purple-100/80 to-white/40 border border-purple-200/50 rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden flex-none w-[85vw] md:w-[450px] snap-start shadow-purple-500/5">
-                <div class="absolute -right-10 -top-10 text-9xl opacity-5">🗓️</div>
-                <h3 class="text-2xl font-bold mb-4">Always in Sync</h3>
-                <p class="text-slate-600 leading-relaxed mb-6 h-24">Share your schedule once or sync your Personal Availability. Seekr instantly shows when the whole crew is free for your next adventure.</p>
-                <img src="images/group-availability.png" alt="Group Availability" class="w-full h-auto rounded-xl shadow-sm">
-            </div>
-
-            <div class="glass-card bg-gradient-to-br from-emerald-100/80 to-white/40 border border-emerald-200/50 rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden flex-none w-[85vw] md:w-[450px] snap-start shadow-emerald-500/5">
-                <div class="absolute -right-10 -top-10 text-9xl opacity-5">💸</div>
-                <h3 class="text-2xl font-bold mb-4">Persistent Balances</h3>
-                <p class="text-slate-600 leading-relaxed mb-6 h-24">Split costs across multiple trips or just split dinner on a normal Tuesday. Keep a running, transparent tally with your favorite crew.</p>
-                <img src="images/group-expenses.png" alt="Group Expenses" class="w-full h-auto rounded-xl shadow-sm">
-            </div>
-
-            <div class="glass-card bg-gradient-to-br from-blue-100/80 to-white/40 border border-blue-200/50 rounded-[2.5rem] p-10 md:p-12 relative overflow-hidden flex-none w-[85vw] md:w-[450px] snap-start shadow-blue-500/5">
-                <div class="absolute -right-10 -top-10 text-9xl opacity-5">🌍</div>
-                <h3 class="text-2xl font-bold mb-4">The Member Feed</h3>
-                <p class="text-slate-600 leading-relaxed mb-6 h-24">See what your friends are planning. Check out members' trips in all stages—Ideas, Planning, and Booked—to get inspired or ask to join.</p>
-                <img src="images/the-feed.png" alt="The Feed" class="w-full h-auto rounded-xl shadow-sm">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-        <div class="flex flex-col md:flex-row items-center gap-20 animate-up">
-            <div class="flex-1">
-                <div class="text-emerald-600 font-bold mb-6 uppercase tracking-[0.2em] text-xs">Seekr Planning Models</div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-8 leading-tight">Plan at the speed of thought.</h2>
-                <p class="text-slate-500 text-lg leading-relaxed mb-6">Seekr’s Smart Bridge uses a three-tier intelligent routing system to turn messy thoughts into perfect plans instantly.</p>
-                <ul class="space-y-4">
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">⚡</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">QuickCapture Bar:</strong> Type "Ski trip to Utah" and let local on-device parsing extract details instantly and privately.</span>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <span class="text-xl">🧠</span>
-                        <span class="text-slate-600"><strong class="text-slate-900">Cloud AI:</strong> Let generative models build day-by-day itineraries or build an afternoon around your existing meetings.</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex-1 relative w-full aspect-square md:aspect-auto">
-                <img src="images/ai-capture.png" alt="AI Quick Capture" class="w-full h-auto rounded-3xl drop-shadow-2xl">
-            </div>
-        </div>
-
-        <div class="animate-up border-t border-slate-100 pt-32">
-            <div class="grid md:grid-cols-2 gap-20">
-                <div>
-                    <div class="text-3xl mb-6">🗓️</div>
-                    <h3 class="text-3xl font-bold mb-4">Your schedule in perfect harmony.</h3>
-                    <p class="text-slate-500 text-lg leading-relaxed mb-8">Connect your itinerary directly with your Apple Calendar. View flights, stays, and dinner reservations right alongside your daily meetings and events—all in one organized schedule.</p>
-                    <img src="images/calendar.png" alt="Calendar" class="w-full h-auto rounded-3xl border border-slate-100">
-                </div>
-                <div>
-                    <div class="text-3xl mb-6">💳</div>
-                    <h3 class="text-3xl font-bold mb-4">Fair settling, globally.</h3>
-                    <p class="text-slate-500 text-lg leading-relaxed mb-8">Keep a close eye on your budget in any currency. All participants can log their own contributions, and Seekr calculates the math instantly, making finances effortless for everyone.</p>
-                    <img src="images/expenses.png" alt="Expenses" class="w-full h-auto rounded-3xl border border-slate-100">
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-        <section id="compare" class="py-32 px-6 bg-slate-50">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16 animate-up">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4">Seekr vs. The Others</h2>
-            <p class="text-slate-500 text-lg">See why Seekr is the new standard for modern travel crews.</p>
-        </div>
-
-        <div class="glass-table rounded-[2.5rem] overflow-x-auto shadow-2xl animate-up border border-slate-200">
-            <table class="w-full text-left border-collapse min-w-[800px]">
-                <thead>
-                    <tr class="bg-slate-100/80 border-b border-slate-200">
-                        <th class="p-8 font-bold text-slate-900 w-1/4">The Planning Engine</th>
-                        <th class="p-8 font-bold text-blue-600 bg-blue-50/50 border-x border-blue-100/50 text-center">
-                            <div class="flex flex-col items-center gap-2">
-                                <span class="text-xs uppercase tracking-widest opacity-60">The Pro Choice</span>
-                                Seekr
-                            </div>
-                        </th>
-                        <th class="p-8 font-semibold text-slate-500 text-center">Tripsy</th>
-                        <th class="p-8 font-semibold text-slate-500 text-center">TripIt</th>
-                        <th class="p-8 font-semibold text-slate-500 text-center">Flighty</th>
-                    </tr>
-                </thead>
-                <tbody class="text-sm">
-                    <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
-                        <td class="p-8">
-                            <div class="font-bold text-slate-900 mb-1">The Genesis Phase</div>
-                            <div class="text-slate-500 text-xs">Ideas & Brainstorming stages</div>
-                        </td>
-                        <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Full Lifecycle</td>
-                        <td class="p-8 text-slate-400 text-center">❌ Booked only</td>
-                        <td class="p-8 text-slate-400 text-center">❌ Confirmation only</td>
-                        <td class="p-8 text-slate-400 text-center">❌ Flight only</td>
-                    </tr>
-
-                    <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
-                        <td class="p-8">
-                            <div class="font-bold text-slate-900 mb-1">Availability Sync</div>
-                            <div class="text-slate-500 text-xs">Finding "Best Dates" automatically</div>
-                        </td>
-                        <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Smart Matching</td>
-                        <td class="p-8 text-slate-400 text-center">❌ Manual</td>
-                        <td class="p-8 text-slate-400 text-center">❌ Manual</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No</td>
-                    </tr>
-
-                    <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
-                        <td class="p-8">
-                            <div class="font-bold text-slate-900 mb-1">The Group Vault</div>
-                            <div class="text-slate-500 text-xs">Persistent shared gear & asset tracking</div>
-                        </td>
-                        <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Persistent</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No</td>
-                    </tr>
-
-                    <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
-                        <td class="p-8">
-                            <div class="font-bold text-slate-900 mb-1">Expense Core</div>
-                            <div class="text-slate-500 text-xs">Global splitting & multi-currency</div>
-                        </td>
-                        <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Pro Splitting</td>
-                        <td class="p-8 text-slate-600 text-center">⚠️ Basic Lists</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No</td>
-                    </tr>
-
-                    <tr class="border-b border-slate-100 group hover:bg-white transition-colors">
-                        <td class="p-8">
-                            <div class="font-bold text-slate-900 mb-1">Smart Bridge AI</div>
-                            <div class="text-slate-500 text-xs">Local + Cloud intelligent parsing</div>
-                        </td>
-                        <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium">✅ Privacy-First</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No AI</td>
-                        <td class="p-8 text-slate-600 text-center">⚠️ Server-side</td>
-                        <td class="p-8 text-slate-400 text-center">❌ No AI</td>
-                    </tr>
-
-                    <tr class="group hover:bg-white transition-colors">
-                        <td class="p-8">
-                            <div class="font-bold text-slate-900 mb-1">Social Lobby</div>
-                            <div class="text-slate-500 text-xs">Persistent Groups vs. One-off Trips</div>
-                        </td>
-                        <td class="p-8 bg-blue-50/30 border-x border-blue-100/30 text-center font-medium rounded-b-[2.5rem]">✅ Member System</td>
-                        <td class="p-8 text-slate-600 text-center">⚠️ Guests only</td>
-                        <td class="p-8 text-slate-600 text-center">⚠️ Shared view</td>
-                        <td class="p-8 text-slate-600 text-center">⚠️ Friends only</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <div class="mt-12 text-center text-slate-400 text-sm italic">
-            * Comparison based on public feature sets as of April 2026. Seekr requires iOS 17 or later.
-        </div>
-    </div>
-</section>
-
-    <section class="py-40 px-6 text-center bg-white relative">
-        <h2 class="text-5xl font-bold mb-10 animate-up">Start planning your next adventure.</h2>
-        <div class="animate-up mt-12">
-            <button class="bg-black text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-slate-800 transition shadow-2xl">
-                Download Seekr Free
-            </button>
-        </div>
-    </section>
+    <section class="py-40 px-6 text-center bg-white relative">
+        <h2 class="text-5xl font-bold mb-10 animate-up">Start planning your next adventure.</h2>
+        <div class="animate-up mt-12">
+            <button class="bg-black text-white px-12 py-6 rounded-full font-bold text-xl hover:bg-slate-800 transition shadow-2xl">
+                Download Seekr Free
+            </button>
+        </div>
+    </section>
 
 </main>
 
@@ -919,54 +619,56 @@ body {
         })
         .catch(err => console.error("Could not load footer:", err));
 </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
 
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".hero-text", {
+        y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power4.out"
+    });
 
-        gsap.to(".hero-text", {
-            y: 0, opacity: 1, duration: 1.2, stagger: 0.2, ease: "power4.out"
-        });
+    function initScrollAnimations(targets) {
+        gsap.utils.toArray(targets).forEach(element => {
+            gsap.to(element, {
+                scrollTrigger: {
+                    trigger: element,
+                    start: "top 88%",
+                    toggleActions: "play none none reverse"
+                },
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power2.out"
+            });
+        });
+    }
 
-        function initScrollAnimations(targets) {
-            gsap.utils.toArray(targets).forEach(element => {
-                gsap.to(element, {
-                    scrollTrigger: {
-                        trigger: element,
-                        start: "top 88%",
-                        toggleActions: "play none none reverse"
-                    },
-                    y: 0,
-                    opacity: 1,
-                    duration: 1,
-                    ease: "power2.out"
-                });
-            });
-        }
+    initScrollAnimations('.animate-up');
 
-        initScrollAnimations('.animate-up');
+    // --- THE PINNED SCRUB ANIMATION (Fixed Logic) ---
+    if (document.querySelector("#phone-scroll-section")) {
+        
+        // Hide pins instantly before scroll starts
+        gsap.set(".passport-pin", { opacity: 0, scale: 0.3, y: 100, rotation: -15 });
 
-        // --- THE PINNED SCRUB ANIMATION ---
-        if (document.querySelector("#phone-scroll-section")) {
-            gsap.set(".passport-pin", { opacity: 0, scale: 0.3, y: 100, rotation: -15 });
+        // Note: No 'sticky' classes in HTML, GSAP handles the pin container directly
+        const phoneTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#phone-scroll-section",
+                start: "top top",      
+                end: "+=150%",         // Tells GSAP to hold the pin for 1.5x the screen height
+                scrub: 1,              
+                pin: true,             
+                anticipatePin: 1
+            }
+        });
 
-            const phoneTimeline = gsap.timeline({
-                scrollTrigger: {
-                    trigger: "#phone-scroll-section",
-                    start: "top top",      
-                    end: "+=150%",         
-                    scrub: 1,              
-                    pin: true,             
-                    anticipatePin: 1
-                }
-            });
-
-            phoneTimeline
-                .to("#app-ui-cards", { opacity: 0, scale: 0.85, y: -50, duration: 1, ease: "power2.inOut" })
-                .to("#phone-title-1", { opacity: 0, y: -20, duration: 0.5 }, "<0.3")
-                .to("#phone-title-2", { opacity: 1, y: 0, duration: 0.5 }, ">")
-                .to(".passport-pin", { opacity: 1, scale: 1, y: 0, rotation: 0, stagger: 0.15, duration: 1.2, ease: "back.out(1.5)" }, "<");
-        }
-    </script>
+        phoneTimeline
+            .to("#app-ui-cards", { opacity: 0, scale: 0.85, y: -50, duration: 1, ease: "power2.inOut" })
+            .to("#phone-title-1", { opacity: 0, y: -20, duration: 0.5 }, "<0.3")
+            .to("#phone-title-2", { opacity: 1, y: 0, duration: 0.5 }, ">")
+            .to(".passport-pin", { opacity: 1, scale: 1, y: 0, rotation: 0, stagger: 0.15, duration: 1.2, ease: "back.out(1.5)" }, "<");
+    }
+</script>
     <script>
     // --- App Countdown Logic ---
     // Set your target launch date here! (Format: Month Day, Year Time)
